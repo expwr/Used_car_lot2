@@ -58,5 +58,3 @@ if any(ele in user.lower() for ele in searching):
 
 else:
     print("Please check spelling and try again...")
-
-sucks = "this shit sucks"
