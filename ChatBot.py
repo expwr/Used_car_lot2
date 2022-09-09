@@ -11,26 +11,26 @@ years = ['1928', '1929', '1930', '1931', '1932', '1933', '1934', '1935', '1936',
 '1975', '1976', '1977', '1978', '1979', '1980', '1981', '1982', '1983', '1984', '1985', '1986', '1987', '1988', '1989', '1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', 
 '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022']
 car_type = ['hatchback', 'sedan', 'suv', 'muv', 'coupe', 'convertible', 'pickup truck', 'pickup', 'truck', 'jeep']
-users_desired_car = []
+users_desired_car = ['null', 'null', 'null', 'null']
 
 #First Message
 print("-------------------------------------------------------------\n    Hello! If you have any troubles, please message here.\n-------------------------------------------------------------")
 #Input
 user = input("Message: ")
-
-if any(ele in user.lower() for ele in searching):
-    user1 = user.split()
-    
+#Splits the string into individual words
+user1 = user.split()
+#Sorts through all the words and sees if they match a color, year, brand and type and adds the results to a list
 for i in range(len(user1)):
     if user1[i] in colors:
-        users_desired_car.append(user1[i])
+        users_desired_car[3] = (user1[i])
     if user1[i] in car_brands:
-        users_desired_car.append(user1[i])
+        users_desired_car[0] = (user1[i])
     if user1[i] in years:
-        users_desired_car.append(user1[i])
+        users_desired_car[2] = (user1[i])
     if user1[i] in car_type:
-        users_desired_car.append(user1[i])
+        users_desired_car[1] = (user1[i])
 
+#|TEMPORARY|Prints the list 
 print(users_desired_car)
 
 
