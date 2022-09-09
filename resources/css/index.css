@@ -101,7 +101,7 @@ margin: 10px;
     text-align: center;
     font-size: 70px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color:rgb(44, 44, 44)
+    color:rgb(255, 255, 255)
 }
 .home-des
 {
@@ -132,9 +132,10 @@ margin: 10px;
     margin-bottom: 150px;
   }
   #contact_form {
-    background-color: #405d27;
+    background-color: #dbc1a300;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-right: 200px;
     }
   
   .row label{
@@ -145,14 +146,14 @@ margin: 10px;
   
   input[type=text], textarea {
     text-align: center;
-    background-color: #82b74b;
+    background-color: #ffffff;
     border-radius: 10px;
     margin: auto 0;
     color: #FFFFFF;
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    box-shadow: 5px 5px 10px #3e4444;
+    box-shadow: 5px 5px 10px #444b4b;
     }
   
   input[type=text] {
@@ -160,7 +161,7 @@ margin: 10px;
   }
   
   input[type=submit] {
-    background-color: #ff7b25;
+    background-color: #423934;
     color: #FFFFFF;
     border-radius: 10px;
     font-size: 18px;
