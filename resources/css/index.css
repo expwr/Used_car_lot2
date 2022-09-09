@@ -11,7 +11,6 @@ body
     background-position: 50% 10%;
     font-family: sans-serif;
     position: sticky;
-    background-repeat: no-repeat;
 }
 
 p{
@@ -25,7 +24,7 @@ p{
     /* background-color: blue; */
     text-align: center;
     position: sticky;
-    height: auto;
+    height: 100px;
     max-height: 150px;
     padding-bottom: 10px;
     padding-top: 10px;
