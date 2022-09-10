@@ -21,13 +21,14 @@ p{
 .menu-bar
 {
     background: rgba(168, 140, 140, 0.397);
-    /* background-color: blue; */
     text-align: center;
     position: sticky;
     height: 100px;
     max-height: 150px;
     padding-bottom: 10px;
     padding-top: 10px;
+    margin-left: 200px;
+    margin-bottom: 100px;
     z-index: 0;
 }
 
@@ -126,10 +127,10 @@ margin: 10px;
 .title 
 {
     text-align: left;
-    font-size: 70px;
+    font-size: 30px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:rgb(255, 255, 255);
-
+    margin-top: 100px;
     z-index: -1;
 }
 
@@ -139,7 +140,7 @@ margin: 10px;
     margin-top: 300px;
     color: rgb(255, 255, 255);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-color:rgb(44, 44, 44);
+    background-color:rgb(44, 44, 44);
     border-style: groove;
     display: inline-block;
     margin-left: 20%;
