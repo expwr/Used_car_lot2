@@ -25,11 +25,10 @@ p{
     position: sticky;
     height: 100px;
     max-height: 150px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-left: 200px;
-    margin-bottom: 100px;
-    z-index: 0;
+    padding-bottom: 0px;
+    padding-top: 0px; 
+    padding-left: 100px;
+    z-index: -1;
 }
 
 .menu-bar ul 
@@ -130,8 +129,21 @@ margin: 10px;
     font-size: 30px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:rgb(255, 255, 255);
-    margin-top: 100px;
-    z-index: -1;
+    z-index: 1;
+    top: 10px;
+    left: 15px;
+    position: absolute;
+}
+.title-small
+{
+    text-align: left;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgb(255, 255, 255);
+    z-index: 1;
+    top: 25px;
+    left: 10px;
+    position: absolute;
 }
 
 .home-des
