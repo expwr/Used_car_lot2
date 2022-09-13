@@ -6,7 +6,7 @@
 }
 body
 { 
-    /* background-image: url(https://www.copilotsearch.com/uploads/00_used_car_lot-2ajwf7c.jpg); */
+    background-image: url(https://www.copilotsearch.com/uploads/00_used_car_lot-2ajwf7c.jpg);
     background-color: rgb(44, 44, 44);
     background-size: cover;
     background-position: 50% 10%;
@@ -50,12 +50,12 @@ padding: 15px;
 .menu-bar ul li a
 {
 text-decoration: none;
-color: #fff;
+color: #bab6b2;
 }
 
 .active, .menu-bar ul li:hover
 {
-    background: rgb(44, 44, 44);
+    background: #393a36;
     border-radius: 5px;
     width: auto;
 }
@@ -74,7 +74,7 @@ color: #fff;
 {
     display: block;
     position: absolute;
-    background: #d8e2dc;
+    background: #393a36;
     margin-top: 15px;
     margin-left: -15px;
 }
@@ -102,7 +102,7 @@ margin: 10px;
 
 .menu-bar ul li:hover .sub-menu-1 ul li a:hover
 {
-    color:  rgb(177, 163, 163);
+    color:  #d7eef0;
 }
 
 .fa-angle-right
@@ -121,7 +121,7 @@ margin: 10px;
     display: block;
     margin-top: -40px;
     margin-left: 140px;
-    background-color:rgb(44, 44, 44);
+    background-color:#393a36;
 }
 
 .title 
@@ -129,7 +129,7 @@ margin: 10px;
     text-align: left;
     font-size: 30px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #808080;
+    color: #d7eef0;
     z-index: 1;
     top: 10px;
     left: 15px;
@@ -138,9 +138,9 @@ margin: 10px;
 .title-small
 {
     text-align: left;
-    font-size: 25px;
+    font-size: 23px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #808080;
+    color: #d7eef0;
     z-index: 1;
     top: 25px;
     left: 10px;
@@ -152,7 +152,7 @@ margin: 10px;
     text-align: left;
     font-size: 25px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #808080;
+    color: #d7eef0;
     z-index: 1;
     top: 50px;
     left: 10px;
@@ -165,7 +165,7 @@ margin: 10px;
     margin-top: 300px;
     color: rgb(255, 255, 255);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color:rgb(170, 144, 144);
+    background-color:#636060;
     border-style: groove;
     display: inline-block;
     margin-left: 20%;
@@ -181,7 +181,7 @@ margin: 10px;
     border-color:rgb(44, 44, 44);
     border-style: groove;
     display: block;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-right: 20%;
     font-size: 35px;
     background-color:rgb(44, 44, 44);
@@ -191,7 +191,10 @@ margin: 10px;
     background-color: #dbc1a300;
     padding-top: 20px;
     padding-bottom: 20px;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
     }
   
   .row label{
@@ -201,11 +204,11 @@ margin: 10px;
   }
   
   input[type=text], textarea {
-    text-align: center;
+    text-align: left;
     background-color: #ffffff;
     border-radius: 10px;
     margin: auto 0;
-    color: #FFFFFF;
+    color: #332828;
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -239,3 +242,26 @@ margin: 10px;
     cursor: pointer;
     margin-top: 315px;
  }
+
+
+ .rep-pics 
+ {
+    height: 500px;
+    width: 700px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 110px;
+ }
+
+ .rep-title
+ {
+    margin-left: 325px;
+    display: inline-block;
+    position: relative;
+    top: 110px;
+    background-color: #444b4b;
+    color: #FFFFFF;
+    padding: 5px;
+ }
+
