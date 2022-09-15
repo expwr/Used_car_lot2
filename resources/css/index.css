@@ -6,12 +6,14 @@
 }
 body
 { 
-    background-image: url(https://www.copilotsearch.com/uploads/00_used_car_lot-2ajwf7c.jpg);
+    /* background-image: url(https://www.copilotsearch.com/uploads/00_used_car_lot-2ajwf7c.jpg); */
     background-color: rgb(44, 44, 44);
     background-size: cover;
     background-position: 50% 10%;
     font-family: sans-serif;
-    position: sticky;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
 }
 
 p{
@@ -181,11 +183,12 @@ margin: 10px;
     border-color:rgb(44, 44, 44);
     border-style: groove;
     display: block;
-    margin-left: 10%;
+    margin-left: -5%;
     margin-right: 20%;
     font-size: 35px;
     background-color:rgb(44, 44, 44);
     margin-bottom: 150px;
+    width: 35%;
   }
   #contact_form {
     background-color: #dbc1a300;
@@ -252,6 +255,7 @@ margin: 10px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 110px;
+    margin-bottom: 50px;
  }
 
  .rep-title
@@ -265,3 +269,14 @@ margin: 10px;
     padding: 5px;
  }
 
+.background-img
+{
+    /* position: cover;
+    z-index: 5; */
+    height: auto;
+    width: auto;
+    margin-top: 110px;
+    margin-bottom: 50px;
+
+    
+}
