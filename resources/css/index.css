@@ -7,7 +7,6 @@
 body
 { 
     background-image: url(https://www.copilotsearch.com/uploads/00_used_car_lot-2ajwf7c.jpg);
-    /* background-color: rgb(44, 44, 44); */
     background-size: cover;
     background-position: 50% 10%;
     font-family: sans-serif;
@@ -24,10 +23,10 @@ p{
 
 .menu-bar
 {
-    background: rgba(168, 140, 140, 0.397);
+    background: rgb(128, 117, 117);
     text-align: center;
     position: fixed;
-    height: 100px;
+    height: 80px;
     max-height: 150px;
     padding-bottom: 0px;
     padding-top: 0px; 
@@ -56,7 +55,7 @@ padding: 15px;
 .menu-bar ul li a
 {
 text-decoration: none;
-color: #bab6b2;
+color: #ffffff;
 }
 
 .active, .menu-bar ul li:hover
@@ -135,10 +134,10 @@ margin: 10px;
     text-align: left;
     font-size: 30px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #d7eef0;
-    z-index: 1;
+    color: #ffffff;
     top: 10px;
     left: 15px;
+    z-index: 6;
     position: fixed;
 }
 .title-small
@@ -146,11 +145,11 @@ margin: 10px;
     text-align: left;
     font-size: 23px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #d7eef0;
-    z-index: 1;
+    color: #ffffff;
     top: 25px;
     left: 10px;
     position: fixed;
+    z-index: 6;
 }
 
 .title-split
@@ -158,9 +157,9 @@ margin: 10px;
     text-align: left;
     font-size: 25px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #d7eef0;
-    z-index: 1;
+    color: #ffffff;
     top: 50px;
+    z-index: 6;
     left: 10px;
     position: fixed;
 }
@@ -180,12 +179,11 @@ margin: 10px;
 }
   .rep-text 
   {
-    text-align: center;
+    text-align: left;
     margin-top: 50px;
     color: rgb(255, 255, 255);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-color:rgb(44, 44, 44);
-    border-style: groove;
     display: block;
     margin-left: -5%;
     margin-right: 20%;
@@ -282,4 +280,13 @@ margin: 10px;
     margin-bottom: 50px; */
 
     
+}
+
+.small_rep_pic
+{
+    height: 300px;
+    width: 300px;
+    margin-left: 50%;
+    margin-right: 50%;
+    top: -500px;
 }
