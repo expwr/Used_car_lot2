@@ -72,15 +72,43 @@
         beleive everyone should have a reliable form of transportation 
     </p>
 </div>        
-<div> 
-<style>
+
+<div class = "popup">
+
+    <div class = "title">
+     Car Finder
+    </div>
+
+    <div class = "textarea">
+        <textarea placeholder="Example: Green 1970 Nissan Pickup" name="message" required="" style="height: 180px; width: 330px; resize: none;"></textarea>
+    </div>
+
+    <div class = "close-button">
+        <button id="close">Dismiss</button>
+    </div>    
+</div>
+
+
+<div>
+    <button class = "button-that-opens-the-popup" id="open">Car Finder™</button>
+</div>
     
 
-</style>
-    
-<button class = "button">CHATBOT</button>
+<script>
+    document.getElementById("open").addEventListener("click", function(){
+    document.getElementsByClassName("popup")
+    [0].classList.add("active");
+    document.getElementById("open").style.display("none")
+    })
 
-</div> 
     
+
+    document.getElementById("close").addEventListener("click", function(){
+    document.getElementsByClassName("popup")
+    [0].classList.remove("active");
+    document.getElementById("open").style.display("block")
+    })
+</script>
+
 </body>
 </html>
