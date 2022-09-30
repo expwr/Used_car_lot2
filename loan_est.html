@@ -64,7 +64,42 @@
 </ul>
     </div>
 
+    <div class = "popup">
+
+        <div class = "title">
+         Car Finder
+        </div>
     
+        <div class = "textarea">
+            <textarea placeholder="Example: Green 1970 Nissan Pickup" name="message" required="" style="height: 240px; width: 480px; resize: none;"></textarea>
+        </div>
+    
+        <div class = "close-button">
+            <button id="close">Dismiss</button>
+        </div>    
+    </div>
+    
+    
+    <div>
+        <button class = "button-that-opens-the-popup" id="open">Car Finder™</button>
+    </div>
+        
+    
+    <script>
+        document.getElementById("open").addEventListener("click", function(){
+        document.getElementsByClassName("popup")
+        [0].classList.add("active");
+        document.getElementById("open").style.display("none")
+        })
+    
+        
+    
+        document.getElementById("close").addEventListener("click", function(){
+        document.getElementsByClassName("popup")
+        [0].classList.remove("active");
+        document.getElementById("open").style.display("block")
+        })
+    </script>
 
 
 
