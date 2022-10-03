@@ -6,7 +6,7 @@
 }
 body
 { 
-    background-image: url(https://www.copilotsearch.com/uploads/00_used_car_lot-2ajwf7c.jpg);
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/93156d98-88bb-4173-a3f7-31340ab02d75/d56znb7-07c240d8-308a-468b-b0d8-a01a8b7a33c8.png/v1/fill/w_864,h_756,q_80,strp/lincoln_the_hedgehog_says__freedom_by_jollysaintphil_d56znb7-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzU2IiwicGF0aCI6IlwvZlwvOTMxNTZkOTgtODhiYi00MTczLWEzZjctMzEzNDBhYjAyZDc1XC9kNTZ6bmI3LTA3YzI0MGQ4LTMwOGEtNDY4Yi1iMGQ4LWEwMWE4YjdhMzNjOC5wbmciLCJ3aWR0aCI6Ijw9ODY0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.i1VujqXFnf-p9PrK-h_m9r9gYYYqYTCc1Teq3etoa2A");
     background-size: cover;
     background-position: 50% 10%;
     font-family: sans-serif;
@@ -23,7 +23,7 @@ p{
 
 .menu-bar
 {
-    background: rgb(128, 117, 117);
+    background: #89CFF0;
     text-align: center;
     position: fixed;
     height: 80px;
@@ -55,12 +55,12 @@ padding: 15px;
 .menu-bar ul li a
 {
 text-decoration: none;
-color: #ffffff;
+color: black;
 }
 
 .active, .menu-bar ul li:hover
 {
-    background: #393a36;
+    background: white;
     border-radius: 5px;
     width: auto;
 }
@@ -79,7 +79,7 @@ color: #ffffff;
 {
     display: block;
     position: absolute;
-    background: #393a36;
+    background: white;
     margin-top: 15px;
     margin-left: -15px;
 }
@@ -94,7 +94,7 @@ margin: 10px;
 {
     width: 150px;
     padding: 10px;
-    border-bottom: 1px dotted #fff;
+    border-bottom: 1px dotted black;
     background: transparent;
     border-radius: 0;
     text-align: left;
@@ -126,19 +126,16 @@ margin: 10px;
     display: block;
     margin-top: -40px;
     margin-left: 140px;
-    background-color:#393a36;
+    background-color:#ffffff;
 }
 
 .title 
 {
-    text-align: left;
-    font-size: 30px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #ffffff;
-    top: 25px;
-    left: 15px;
+    right: 113%;
+    width: 240px;
+    height: 80px;
     z-index: 6;
-    position: fixed;
+    position: relative;
 }
 .title-small
 {
@@ -168,10 +165,11 @@ margin: 10px;
 {
     text-align: center;
     margin-top: 300px;
-    color: rgb(255, 255, 255);
+    color: black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color:#636060;
-    border-style: groove;
+    background-color:#ffffff;
+    border-style: dashed;
+    border-radius: 50px;
     display: inline-block;
     margin-left: 20%;
     margin-right: 20%;
@@ -257,19 +255,18 @@ margin: 10px;
 
 
 .button-that-opens-the-popup {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 89%;
     left: 0%;
-    width: 150px;
-    background-color: #f5f5f5;
-    color: black;
-    border-radius: 10px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 17px;
-    padding: 5px;
+    height: 100px;
+    width: 100px;
+    background-color: #89CFF0;
+    border-radius: 110%;
+    padding: 1px;
 }
 
 .popup {
+    position: fixed;
     width: 500px;
     height: 343px;
     padding: 30px, 20px;
