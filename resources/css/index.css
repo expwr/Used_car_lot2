@@ -366,3 +366,114 @@ margin: 10px;
 
   
 
+.button-that-opens-the-EstPop {
+    position: absolute;
+    margin-top: 11%;
+    margin-left: 94%;
+    top: 100%;
+    background-color: #ca7f7f;
+    color: black;
+    border-radius: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.EstPop {
+    position: sticky;
+    margin: auto;
+    margin-top: 18%;
+    
+    width: 511px;
+    height: 343px;
+    padding: 30px, 20px;
+    background: #ddb2b2;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 9;
+    text-align: center;
+    opacity: 0;
+    top: -200%;
+    transform: scale(0.5);
+    transition: opacity 300ms ease-in-out,
+                top 1000ms ease-in-out,
+                transform 1000ms ease-in-out;
+}
+
+.EstPop.active{
+    opacity: 1;
+    top: 50%;
+    transform:translate(-0%, -0%) scale(1);
+    transition: all 300ms cubic-bezier(0.18, 0.89,0.43, 1.19);
+}
+
+
+
+.EstPop .close-button {
+    position: fixed;
+    margin-top: 56px;
+}
+
+.EstPop .close-button button {
+    padding: 10px, 10px;
+    background-color: #111;
+    color: #f5f5f5;
+    border: 2px solid #111;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.EstPop .close-button button:hover {
+    color: #111;
+    background: #f5f5f5;
+}
+
+.EstPop .slidecontainer {
+    position: sticky;
+    margin-top: 50px;
+    width: 80%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+.EstPop .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .EstPop .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .EstPop .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .EstPop .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  .DownPay{
+    position: relative;
+    margin-right: 80%;
+
+  }
