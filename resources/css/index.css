@@ -81,12 +81,12 @@ nav ul ul{
 nav ul .cars-show.show1{
   opacity: 1;
   height: 18%;
-  transition: all 1s
+  transition: all 1.5s
 }
 
 nav ul .cars-y{
   height: 6.5%;
-  transition: all .5s;
+  transition: all 1s;
 }
 
 nav ul .cars-y.show2{
