@@ -16,8 +16,8 @@
             Side Menu
         </div>
         <ul>
-            <li><a href = "#">Home</a></li>
-            <li>
+            <li><a href = "index.html">Home</a></li>
+            <li class = "cars-y">
                 <a href = "#" class = "cars-btn">Cars
                     <span class = "fas fa-caret-down first"></span>
                 </a>
@@ -27,15 +27,8 @@
                 </ul>
             </li>
             <li>
-                <a href = "#" class = "rep-btn">Representatives
-                    <span class = "fas fa-caret-down second"></span>
+                <a href = "represenatives.html" class = "rep-btn">Representatives
                 </a>
-                <ul class = "rep-show">
-                    <li><a href = "represenatives.html">Overview</a></li>
-                    <li><a href = "noah.html">Noah Diana</a></li>
-                    <li><a href = "jon.html">Jon Factor</a></li>
-                    <li><a href = "chase.html">Chase Hutcheson</a></li>
-                </ul>
             </li>
             <li><a href = "loan_est.html">Loan Estimator</a></li>
         </ul>
@@ -45,10 +38,7 @@
         $('.cars-btn').click(function(){
             $('nav ul .cars-show').toggleClass("show1");
             $('nav ul .first').toggleClass("rotate");
-        })
-        $('.rep-btn').click(function(){
-            $('nav ul .rep-show').toggleClass("show2");
-            $('nav ul .second').toggleClass("rotate");
+            $('nav ul .cars-y').toggleClass('show2');
         })
     </script>
 
@@ -77,7 +67,7 @@
     </div>
 
     <div>
-        <button class = "button-that-opens-the-popup" id="open"><a><img class="button-that-opens-the-popup" src = ChatBubble.png></a></button>
+        <button class = "button-that-opens-the-popup" id="open"><a><img class="button-that-opens-the-popup" src = C:\Users\hutcheson_chase\Documents\GitHub\Used_car_lot2\Resources\Pictures\ChatBubble.png></a></button>
     </div>
 
     <script>
