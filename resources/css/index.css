@@ -1,14 +1,12 @@
-*
-{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body
-{ 
+body{ 
     background-image: url(https://www.copilotsearch.com/uploads/00_used_car_lot-2ajwf7c.jpg);
     background-size: cover;
-    background-position: 50% 10%;
+    background-position: 50% 0%;
     font-family: sans-serif;
     position: relative;
     top: 0;
@@ -102,32 +100,17 @@ nav ul ul li a{
   padding-left: 80px;
 }
 
-nav ul li a span{
-  position: absolute;
-  top: 40%;
-  right: 20px;
-  transform :translateY(-50%);
-  font-size: 22px;
-  transition: transform 0.4s;
-}
-
-nav ul li a span.rotate{
-  transform :translateY(-50%) rotate(-180deg);
-}
-
 .btn btn-secondary dropdown-toggle{
   color: red;
 }
-.title 
-{
+.title {
     right: 112%;
     width: 240px;
     height: 80px;
     z-index: 6;
     position: relative;
 }
-.title-small
-{
+.title-small{
     text-align: left;
     font-size: 23px;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -150,7 +133,7 @@ nav ul li a span.rotate{
     position: fixed;
 }
 
-@keyframes scroll-left {
+@keyframes scroll-left{
   0%   {
   z-index: -1;
   transform: translateX(100%); 		
@@ -162,45 +145,47 @@ nav ul li a span.rotate{
  }
 
 .Loan-des p{
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: -1;
-  top: -10%;
+  padding-top: 1px;
+  padding-bottom: 1px;
   color: black;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  display: inline-block;
-  font-size: 40px;
+  font-size: 30px;
+  font-weight: bolder;
   animation: scroll-left 10s linear infinite;
 }
 
 .Loan-des {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 20%;
   z-index: -1;
-  text-align: center;
-  display: inline-block;
-  background-color:white;
-  font-size: 40px;
-  border: 2px, white;
+  background-color: white;
+  padding-top: 1;
+  padding-bottom: 1;
 }
 
-.home-des
-{
-    text-align: center;
-    margin-top: 300px;
+.home-des{
+    position: relative;
+    width: 50%;
+    text-align-last: center;
+    left: 30%;
+    bottom: 2;
+    z-index: 2;
     color: black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color:#ffffff;
-    border-style: double;
-    border-radius: 10px;
-    display: inline-block;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 40px;
+    font-size: 30px;
+    background-color: white;
+    border-color: #89CFF0;
+    border-width: 10px;
+    border-radius: 20px;
+    border-style: unset;
+    font-weight: bolder;
+    transform: translateY(50%);
 }
-  .rep-text 
-  {
+
+  .rep-text{
     text-align: left;
     margin-top: 50px;
     color: rgb(255, 255, 255);
@@ -214,6 +199,7 @@ nav ul li a span.rotate{
     margin-bottom: 150px;
     width: 35%;
   }
+
   #contact_form {
     background-color: #dbc1a300;
     padding-top: 20px;
@@ -242,11 +228,11 @@ nav ul li a span.rotate{
     box-shadow: 5px 5px 10px #444b4b;
     }
   
-  input[type=text] {
+  input[type=text]{
     height: 25px;
   }
   
-  input[type=submit] {
+  input[type=submit]{
     background-color: #423934;
     color: #FFFFFF;
     border-radius: 10px;
@@ -255,8 +241,7 @@ nav ul li a span.rotate{
     box-shadow: 5px 5px 5px #3e4444;
   }
 
- .rep-pics 
- {
+ .rep-pics{
     height: 500px;
     width: 700px;
     display: block;
@@ -266,8 +251,7 @@ nav ul li a span.rotate{
     margin-bottom: 50px;
  }
 
- .rep-title
- {
+ .rep-title{
     margin-left: 31.75%;
     display: inline-block;
     position: relative;
@@ -278,10 +262,10 @@ nav ul li a span.rotate{
  }
 
 
-.button-that-opens-the-popup {
+.button-that-opens-the-popup{
     position: fixed;
     top: 93%;
-    left: 1%;
+    right: 1%;
     height: 50px;
     width: 50px;
     background-color: #89CFF0;
@@ -294,23 +278,23 @@ nav ul li a span.rotate{
 .button-that-opens-the-popup:hover{
     background-color: #6ac6f7;
     top: 92%;
-    left: 0.8%;
+    right: 1%;
     height: 60px;
     width: 60px;
 }
 
-.popup {
+.popup{
     position: relative;
-    width: 500px;
-    height: 100px;
-    padding: 30px, 20px;
+    width: 20%;
+    height: 30%;
+    padding: 5%, 3%px;
     background: #f5f5f5;
-    border-radius: 10px;
+    border-radius: 5%;
     box-sizing: border-box;
     z-index: 9;
     text-align: center;
     opacity: 0;
-    top: 300%;
+    top: 100%;
     transform: scale(0.5);
     transition: opacity 300ms ease-in-out,
                 top 1000ms ease-in-out,
@@ -320,7 +304,8 @@ nav ul li a span.rotate{
 .popup.active{
     opacity: 1;
     top: 50%;
-    transform:translate(-0%, -0%) scale(1);
+    left: 50%;
+    transform: translate(-0%, -0%) scale(1);
     transition: all 300ms cubic-bezier(0.18, 0.89,0.43, 1.19);
 }
 
@@ -335,23 +320,18 @@ nav ul li a span.rotate{
 .popup .textarea {
     position: relative;
     text-align: left;
-    text-size-adjust: 70px;
-    background-color: #f5f5f5;
-    border-radius: 6px;
-    box-shadow: none;
-    margin: auto 0;
-    color: #332828;
-    bottom: 50%;
-    z-index: -1;
+    width: 90%;
+    margin-top: 10%;
+    height: 90%;
 
 }
 
-.popup .close-button {
+.popup .close-button{
     position: relative;
     bottom: 60px;
 }
 
-.popup .close-button button {
+.popup .close-button button{
     padding: 10px, 10px;
     background-color: #111;
     color: #f5f5f5;
@@ -364,13 +344,12 @@ nav ul li a span.rotate{
     transition: all 300ms ease-in-out;
 }
 
-.popup .close-button button:hover {
+.popup .close-button button:hover{
     color: #111;
     background: #f5f5f5;
 }
 
-.background-img
-{
+.background-img{
     position: cover;
     height: auto;
     width: auto;
@@ -380,8 +359,7 @@ nav ul li a span.rotate{
     
 }
 
-.small_rep_pic
-{
+.small_rep_pic{
     height: 300px;
     width: 300px;
     margin-left: 50%;
