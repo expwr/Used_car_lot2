@@ -261,24 +261,51 @@ nav ul ul li a{
     padding: 5px;
  }
 
- .container{
-    width: 20%;
-    height: 40%;
-    margin-right: 80%;  
-    top: 50%;
+
+ .chatbox-popup-btn{
+    position: fixed;
+    z-index: 4;
     display: inline-block;
-    flex-direction: column;
+    border-radius: 100%;
+    min-width: 70px;
+    width: 4%;
+    background-color: #89CFF0;
+    height: auto;
+    top: 90%;
+    left: 94%;
+ }
+
+ .chatbox-popup-btn-img{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  z-index: inherit;
+}
+
+ .container{
+    /* table-layout: fixed; */
+    position: absolute;
+    height: 400px;
+    top: 190%;
+    left: 20%;
+    opacity: 1;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     background-color: white;
  }
+
+  .container.show3{
+    display: inline-block;
+  }
 
  .header h1{
     color: #89CFF0;
     padding: 15px;
  }
 
- .body{
-    flex: 1;
+  .container .body1{
+    position: sticky;
+    width: 100%;
+    height: 73%;
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px 30px;
@@ -304,7 +331,7 @@ nav ul ul li a{
  }
 
  form input{
-    flex: 1;
+    flex: auto;
     height: 40px;
     border: none;
     outline: none;

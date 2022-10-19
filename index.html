@@ -53,12 +53,13 @@
         </p>
     </div>
 
+    <button class = "chatbox-popup-btn"><a><img class="chatbox-popup-btn-img" alt = "Image" src = "resources/Pictures/ChatBubble.png"></a></button>
 
-    <div class = "container">
-        <div class = "container">
+    <div class = "container" style="width:100%;">
+        <div class = "container_title">
             <h1>Car Finder™</h1>
         </div>
-        <div class = "body">
+        <div class = "body1">
             <p class = "message">Hello! please type out the car of your choice and we'll help you find it!</p>
             <p class = "message user_message"></p>
         </div>
@@ -69,5 +70,10 @@
             </form>
         </div>
     </div>
+    <script>
+        $('.chatbox-popup-btn').click(function(){
+            $('.container').toggleClass("show3");
+        })
+    </script>
 </body>
 </html>
