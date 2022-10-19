@@ -261,93 +261,71 @@ nav ul ul li a{
     padding: 5px;
  }
 
-
-.button-that-opens-the-popup{
-    position: fixed;
-    top: 93%;
-    right: 1%;
-    height: 50px;
-    width: 50px;
-    background-color: #89CFF0;
-    border-radius: 110%;
-    padding: 1px;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-}
-
-.button-that-opens-the-popup:hover{
-    background-color: #6ac6f7;
-    top: 92%;
-    right: 1%;
-    height: 60px;
-    width: 60px;
-}
-
-.popup{
-    position: relative;
+ .container{
     width: 20%;
-    height: 30%;
-    padding: 5%, 3%px;
-    background: #f5f5f5;
-    border-radius: 5%;
-    box-sizing: border-box;
-    z-index: 9;
-    text-align: center;
-    opacity: 0;
-    top: 100%;
-    transform: scale(0.5);
-    transition: opacity 300ms ease-in-out,
-                top 1000ms ease-in-out,
-                transform 1000ms ease-in-out;
-}
-
-.popup.active{
-    opacity: 1;
+    height: 40%;
+    margin-right: 80%;  
     top: 50%;
-    left: 50%;
-    transform: translate(-0%, -0%) scale(1);
-    transition: all 300ms cubic-bezier(0.18, 0.89,0.43, 1.19);
-}
+    display: inline-block;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    background-color: white;
+ }
 
-.popup .title {
-    text-align: center;
-    margin: 5px 0px;
-    font-size: 30px;
-    font-weight: 600;
-    color: black;
-}
+ .header h1{
+    color: #89CFF0;
+    padding: 15px;
+ }
 
-.popup .textarea {
-    position: relative;
-    text-align: left;
-    width: 90%;
-    margin-top: 10%;
-    height: 90%;
+ .body{
+    flex: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 30px;
+ }
 
-}
-
-.popup .close-button{
-    position: relative;
-    bottom: 60px;
-}
-
-.popup .close-button button{
-    padding: 10px, 10px;
-    background-color: #111;
-    color: #f5f5f5;
-    border: 2px solid #111;
-    font-size: 16px;
-    font-weight: 600;
-    outline: none;
+ .message{
+    background-color: #89CFF0;
+    padding: 10px;
+    color: white;
+    width: fit-content;
     border-radius: 10px;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-}
+    margin-bottom: 15px;
+ }
 
-.popup .close-button button:hover{
-    color: #111;
-    background: #f5f5f5;
-}
+ .user_message{
+    margin-left: auto;
+    background-color: white;
+    color: black;
+ }
+
+ .footer{
+    display: flex;
+ }
+
+ form input{
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    font-size: 16px;
+ }
+
+ form button{
+    width: 100px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #89CFF0;
+    color: white;
+    cursor: pointer;
+ }
+
+ form button:hover{
+    background-color: blue;
+    transition: 0.2s;
+ }
 
 .background-img{
     position: cover;
