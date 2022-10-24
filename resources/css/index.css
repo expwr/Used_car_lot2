@@ -13,7 +13,6 @@ body{
     width: 100%;
     background-attachment: fixed;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 p{
@@ -283,19 +282,25 @@ nav ul ul li a{
 }
 
  .container{
-    /* table-layout: fixed; */
-    position: absolute;
-    height: 400px;
-    top: 190%;
-    left: 20%;
-    opacity: 1;
+    width: 20%;
+    height: 40%;
+    margin-right: 80%;  
+    top: 50%;
+    display: none;
+    flex-direction: column;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     background-color: white;
  }
 
+
   .container.show3{
     display: inline-block;
   }
+
+ .container.show3{
+    display: inline-block;
+ }
+
 
  .header h1{
     color: #89CFF0;
