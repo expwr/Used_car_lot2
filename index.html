@@ -1,123 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" (-webkit-text-size-adjust: none)>
 <head> 
 <title>Sunrise Used Automobiles</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8" content-type="utf-8">
 <link rel="stylesheet" href="resources/css/index.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 
-<body>
-
-
-
-
-    <div class="menu-bar">
-<ul>
-    <li class="active"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
-        <div class="sub-menu-1">
-            <ul>
-                <li><a href="vison.html">Vision</a></li>
-                <li><a href="story.html">Story</a></li>
-            </ul>
-    
-    
+<body>  
+    <nav class = "sidebar">
+        <div class = "text">
+            <img src="resources/Pictures/Sunrise.png" alt = "Image" style = "height:100%;width:100%">
         </div>
-    </li>
-    <li><a href="car_inv.html"><i class="fa fa-car"></i>Cars On Lot</a>
-        <div class="sub-menu-1">
-            <ul>
-                <li class="hover-me"><a href="sedans.html">Sedans</a><i class="fa fa-angle-right"></i>
-                    <div class="sub-menu-2">
-                    <ul>
-                        <li><a href="sport_sedans.html">Sport</a></li>
-                        <li><a href="luxury_sedans.html">Luxury</a></li>
-                        <li><a href="classic_sedans.html">Classic</a></li>
-                    </ul>
-                    </div>
-                </li>
-                <li><a href="suvs.html">SUVs</a><i class="fa fa-angle-right"></i></li>
-                <li><a href="trucks.html">Trucks</a><i class="fa fa-angle-right"></i></li>
-            </ul>
-    
-    
-        </div>
-    </li>
+        <ul>
+            <li><a href = "index.html" class="home-btn">Home</a></li>
+            <li class = "cars-y">
+                <a href = "#" class = "cars-btn">Cars
+                    <span class = "fas fa-caret-down first"></span>
+                </a>
+                <ul class = "cars-show">
+                    <li><a href = "cars_and_minivans.html">Cars & Minivans</a></li>
+                    <li><a href = "trucks.html">Trucks</a></li>
+                    <li><a href = "Crossovers_and_suv.html">Crossovers & SUVs</a></li>
+                    <li><a href = "electric.html">Electric</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href = "represenatives.html" class = "rep-btn">Representatives
+                </a>
+            </li>
+            <li><a href = "loan_est.html">Loan Estimator</a></li>
+        </ul>
+    </nav>
 
-    <li><a href="contact.html"><i class="fa fa-address-card"></i>Contact</a></li>
-    <li><a href="represenatives.html"><i class="fa fa-person"></i>Representatives</a>
-        <div class="sub-menu-1">
-            <ul>
-                <li><a href="noah.html">Noah Diana</a></li>
-                <li><a href="jon.html">Jon Factor</a></li>
-                <li><a href="chase.html">Chase Hutcheson</a></li>
-            </ul>
-    
-    
-        </div>
-    </li>
-    <li><a href="loan_est.html"><i class="fa fa-money-bill"></i>Loan Estimator</a></li>
-    <li><a href="car_inv_search.html"><i class="fa fa-car-side"></i>Car Inventory Search</a></li>
-    <img src = "Sunrise (1).png" class = "title">
-</ul>
+    <script>
+        $('.cars-btn').click(function(){
+            $('nav ul .cars-show').toggleClass("show1");
+            $('nav ul .first').toggleClass("rotate");
+            $('nav ul .cars-y').toggleClass('show2');
+        })
+    </script>
+
+    <div class="home-des">
+        <p>
+            We have cars for low prices!
+        </p>
+        <p>
+            We believe everyone should be able to afford a safe, reliable form of transport.
+        </p>
     </div>
 
-<div class="home-des">
-    <p>
-        We have cars for low prices and 
-    </p>
-    <p>
-        beleive everyone should have a reliable form of transportation 
-    </p>
+    <button class = "chatbox-popup-btn"><a><img class="chatbox-popup-btn-img" alt = "Image" src = "resources/Pictures/ChatBubble.png"></a></button>
 
-</div>        
-
-<div class = "popup">
-
-    <div class = "title">
-     Car Finder
+    <div class = "container" style="width:100%;">
+        <div class = "container_title">
+            <h1>Car Finder™</h1>
+        </div>
+        <div class = "body1">
+            <p class = "message">Hello! please type out the car of your choice and we'll help you find it!</p>
+            <p class = "message user_message"></p>
+        </div>
+        <div class = "footer">
+            <form>
+                <input type = "text" name = "">
+                <button>SEND</button>
+            </form>
+        </div>
     </div>
-
-    <div class = "textarea">
-        <textarea placeholder="Example: Green 1970 Nissan Pickup" name="message" required="" style="height: 240px; width: 480px; resize: none;"></textarea>
-    </div>
-
-    <div class = "close-button">
-        <button id="close">Dismiss</button>
-    </div>    
-</div>
-
-
-<div>
-    
-    <button class = "button-that-opens-the-popup" id="open"><a><img class="button-that-opens-the-popup" src = ChatBubble.png></a></button>
-
-</div>
-    
-
-<script>
-    document.getElementById("open").addEventListener("click", function(){
-    document.getElementsByClassName("popup")
-    [0].classList.add("active");
-    document.getElementById("open").style.display("none")
-    })
-
-    
-
-    document.getElementById("close").addEventListener("click", function(){
-    document.getElementsByClassName("popup")
-    [0].classList.remove("active");
-    document.getElementById("open").style.display("block")
-    })
-</script>
-
-    
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
+    <script>
+        $('.chatbox-popup-btn').click(function(){
+            $('.container').toggleClass("show3");
+        })
+    </script>
 </body>
 </html>
