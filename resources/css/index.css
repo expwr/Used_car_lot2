@@ -265,6 +265,14 @@ input[type=submit]{
   cursor: pointer;
 }
 
+.rep-title-links{
+  color: black;
+}
+
+.rep-title-links:hover{
+  color: black;
+}
+
 .chatbox-popup-btn{
   position: fixed;
   z-index: 4;
