@@ -132,18 +132,24 @@
 
 <div class = "EstPop">
     
-    <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-    </div>
+    
     <form>
-         <label for="DownPay">Down Payment:</label><br>
-         <input type="text" id="DownPay" name="DownPay"><br> 
+         <h1 class="EstTitle">Estimator</h1>
+            
+                <form>
+                    <h2> Trade In? </h2>
+                    <button class = EstTradeYa name="TradeY/N" type="submit" value="True">Yes</button>
+                    <button class = EstTradeNa name="TradeY/N" type="submit" value="False">No</button>
+                </form>
+            <input type="text" id="DownPay" name="DownPay"><br> 
          <input type="submit" value="Submit">
     </form>
     <div class = "close-button">
         <button id="close">Dismiss</button>
     </div>   
-
+    <div class="slidecontainer">
+        <input type="range" min="0" max="800" value="400" step="25" class="slider" id="myRange">
+    </div>
 
 
 </div>
@@ -161,12 +167,17 @@
     document.getElementById("open").style.display("none")
     })
 
-    
-
     document.getElementById("close").addEventListener("click", function(){
     document.getElementsByClassName("EstPop")
     [0].classList.remove("active");
     document.getElementById("open").style.display("block")
+    })
+
+    document.getElementById('EstTradeYa').addEventListener('click', function(){
+    document.getElementsByClassName("EstTradeY")
+    [0].classList.remove("active");
+    document.getElementById("open").style.display("none")
+
     })
 </script>
 
