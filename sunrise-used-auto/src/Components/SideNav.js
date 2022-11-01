@@ -7,15 +7,13 @@ function SideNav() {
         <ul className="SideNavList">
             {SideNav_Data.map((val, key) => {
                 return (
-                    <li key = {key} 
+                    <li key={key} 
                     className = "row"
+                    id={window.location.pathname === val.link ? "active" : ""}
                     onClick = {() => {
-                        window.localStorage.pathname = val.link}}>
-                        {" "}
-                        <div>{val.icon}</div>{" "}
-                        <div>
-                            {val.title}
-                        </div>
+                        window.location.pathname = val.link;
+                    }}>
+                        <div id='icon'>{val.icon}</div>{" "}<div id='title'>{val.title}</div>
                     </li>
                 )
             })}
