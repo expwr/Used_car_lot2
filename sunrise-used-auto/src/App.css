@@ -16,9 +16,16 @@ body{
 
 
 .SideNav {
-  height: 100vw;
-  width: 250px;
-  background-color: #89CFF0;
+  top: 0%;
+  z-index: 2;
+  position: fixed;
+  width: 13%;
+  min-width: 200px;
+  height: 100%;
+  left: 0;
+  background: #89CFF0;
+  border-top-right-radius: 10px; 
+  border-bottom-right-radius: 10px; 
 }
 
 .SideNavList {
