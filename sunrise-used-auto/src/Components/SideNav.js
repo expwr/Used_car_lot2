@@ -1,9 +1,11 @@
 import React from 'react'
 import {SideNav_Data} from "./SideNav_Data"
+import Sunrise from './Sunrise.png'
 
 function SideNav() {
   return (
     <div className = "SideNav">
+        <img src={Sunrise} className='SideNavImg' alt=''/>
         <ul className="SideNavList">
             {SideNav_Data.map((val, key) => {
                 return (
