@@ -10,7 +10,7 @@ export const SideNav_Data = [
     {
         title: "Home",
         icon: <CottageIcon />,
-        link: "/Home"
+        link: "/"
     },
     {
         title: "Cars",
