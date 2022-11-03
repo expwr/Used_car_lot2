@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { SideNav_Data } from "./SideNav_Data";
 import "../App.css";
 import { IconContext } from "react-icons";
 import Sunrise from './Sunrise.png'
 
-function Navbar() {
-  const [sidebar] = useState(true);
-
+function Navbar() {;
   return (
     <>
       <IconContext.Provider value={{ color: "undefined" }}>
