@@ -28,6 +28,7 @@ body{
   color: #fff;
 }
 
+
 .nav-menu {
   background-color: #89CFF0;
   width: 250px;
@@ -48,10 +49,6 @@ body{
   height: 250px;
 }
 
-.nav-menu.active {
-  left: 0;
-  transition: 450ms;
-}
 
 .nav-text {
   display: flex;
@@ -73,25 +70,18 @@ body{
   align-items: center;
   margin-right: 15%;
   border-radius: 2px;
+  transition: 70ms;
 }
 
 .nav-text a:hover {
+  margin-right: 13%;
   background-color: #6ac6f7;
   color: #fff;
+  transition: 70ms;
 }
 
 .nav-menu-items {
   width: 100%;
-}
-
-.navbar-toggle {
-  position: relative;
-  color: white;
-  left: 60%;
-  height: 80px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 span {

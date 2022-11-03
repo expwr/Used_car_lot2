@@ -33,38 +33,6 @@ const router = createBrowserRouter(createRoutesFromElements(
   </Route>
 ))
 
-// const router = createBrowserRouter([
-//   {
-//     element: <AppLayout />,
-//     children: [
-//       {
-//         path: "/",
-//         element: <Home />,
-//       },
-//       {
-//         path: "/Cars",
-//         element: <Cars />,
-//       },
-//       {
-//         path: "/Representatives",
-//         element: <Reps />,
-//       },
-//       {
-//         path: "/LoanEst",
-//         element: <LoanEst />,
-//       },
-//       {
-//         path: "/Account",
-//         element: <Account />,
-//       },
-//       {
-//         path: "/Support",
-//         element: <Support />,
-//       },
-//     ],
-//   },
-// ]);
-
 createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
 );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import { SideNav_Data } from "./SideNav_Data";
 import "../App.css";
 import { IconContext } from "react-icons";
@@ -11,15 +11,15 @@ function Navbar() {;
       <IconContext.Provider value={{ color: "undefined" }}>
         <div className="navbar">
         <nav className={"nav-menu"}>
-          <ul className="nav-menu-items">
+          <ul className="nav-menu-items" id={NavLink ? "active" : ""}>
           <img src={Sunrise} alt="" className="Logo"/>
             {SideNav_Data.map((item, index) => {
               return (
-                <li key={index} className={item.cName}>
-                  <Link to={item.path}>
+                <li key={index} className={item.cName} >
+                  <NavLink to={item.path}>
                     {item.icons}
-                    <span>{item.title}</span>
-                  </Link>
+                    <span >{item.title}</span>
+                  </NavLink>
                 </li>
               );
             })}
