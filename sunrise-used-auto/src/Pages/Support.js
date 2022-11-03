@@ -1,11 +1,11 @@
-import React from 'react'
-import SideNav from '../Components/SideNav'
+import React from "react";
 
 function Support() {
-  return (<div>
-    <SideNav />
-  </div>
-  )
+  return (
+    <div className="Support">
+      <h1>Support</h1>
+    </div>
+  );
 }
 
-export default Support
+export default Support;

@@ -1,11 +1,11 @@
 import React from 'react'
-import SideNav from '../Components/SideNav'
 
 function Cars() {
-  return (<div>
-    <SideNav />
-  </div>
-  )
+  return (
+    <div className="Cars">
+      <h1>Cars</h1>
+    </div>
+  );
 }
 
-export default Cars
+export default Cars;

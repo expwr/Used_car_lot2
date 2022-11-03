@@ -1,11 +1,11 @@
-import React from 'react'
-import SideNav from '../Components/SideNav'
+import React from "react";
 
 function LoanEst() {
-  return (<div>
-    <SideNav />
-  </div>
-  )
+  return (
+    <div className="LoanEst">
+      <h1>Loans</h1>
+    </div>
+  );
 }
 
-export default LoanEst
+export default LoanEst;

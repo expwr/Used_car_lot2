@@ -1,11 +1,11 @@
-import React from 'react'
-import SideNav from '../Components/SideNav'
+import React from "react";
 
 function Account() {
-  return (<div>
-    <SideNav />
-  </div>
-  )
+  return (
+    <div className="Account">
+      <h1>Account</h1>
+    </div>
+  );
 }
 
-export default Account
+export default Account;

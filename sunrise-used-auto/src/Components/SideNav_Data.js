@@ -1,41 +1,47 @@
-import React from 'react'
-import CottageIcon from '@mui/icons-material/Cottage';
-import DirectionsCarFilledIcon from '@mui/icons-material/DirectionsCarFilled';
-import PersonIcon from '@mui/icons-material/Person';
-import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import ContactSupportIcon from '@mui/icons-material/ContactSupport';
+import React  from 'react'
+import * as  FaIcons from 'react-icons/fa'
+import * as AiIcons from 'react-icons/ai'
+import * as RiIcons from 'react-icons/ri'
 
 export const SideNav_Data = [
     {
-        title: "Home",
-        icon: <CottageIcon />,
-        link: "/"
+        title: 'Home',
+        path: '/',
+        icons: <AiIcons.AiFillHome />,
+        cName: "nav-text"
     },
     {
-        title: "Cars",
-        icon: <DirectionsCarFilledIcon />,
-        link: "/Cars"
+        title: 'Cars',
+        path: '/Cars',
+        icons: <AiIcons.AiFillCar />,
+        cName: "nav-text"
     },
     {
-        title: "Representatives",
-        icon: <PersonIcon />,
-        link: "/Representatives"
+    
+        title: 'Representatives',
+        path: '/Reps',
+        icons: <FaIcons.FaUserTie />,
+        cName: "nav-text"
     },
     {
-        title: "Loan Estimator",
-        icon: <AccountBalanceIcon />,
-        link: "/Loan-Estimator"
+    
+        title: 'Loan Estimator',
+        path: '/LoanEst',
+        icons: <FaIcons.FaPiggyBank />,
+        cName: "nav-text"
     },
     {
-        title: "Account",
-        icon: <AccountCircleIcon />,
-        link: "/Account"
+    
+        title: 'Account',
+        path: '/Account',
+        icons: <FaIcons.FaUserCircle />,
+        cName: "nav-text"
     },
     {
-        title: "Support",
-        icon: <ContactSupportIcon />,
-        link: "/Support"
+    
+        title: 'Support',
+        path: '/Support',
+        icons: <RiIcons.RiQuestionnaireFill />,
+        cName: "nav-text"
     },
-
 ]

@@ -1,11 +1,11 @@
-import React from 'react'
-import SideNav from '../Components/SideNav'
+import React from "react";
 
 function Home() {
-  return (<div>
-    <SideNav />
-  </div>
-  )
+  return (
+    <div className="Home">
+      <h1>Home</h1>
+    </div>
+  );
 }
 
-export default Home
+export default Home;

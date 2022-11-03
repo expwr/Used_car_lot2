@@ -1,11 +1,11 @@
-import React from 'react'
-import SideNav from '../Components/SideNav'
+import React from "react";
 
-function Reps() {
-  return (<div>
-    <SideNav />
-  </div>
-  )
+function Representatives() {
+  return (
+    <div className="Representatives">
+      <h1>Reps</h1>
+    </div>
+  );
 }
 
-export default Reps
+export default Representatives;
