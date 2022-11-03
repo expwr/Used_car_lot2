@@ -12,7 +12,7 @@ function Navbar() {
     <>
       <IconContext.Provider value={{ color: "undefined" }}>
         <div className="navbar">
-        <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+        <nav className={"nav-menu"}>
           <ul className="nav-menu-items">
           <img src={Sunrise} alt="" className="Logo"/>
             {SideNav_Data.map((item, index) => {

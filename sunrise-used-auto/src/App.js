@@ -7,12 +7,11 @@ import LoanEst from './Pages/LoanEst';
 import Account from './Pages/Account';
 import Support from './Pages/Support';
 
-
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />}/>
+        <Route path='/' element={<Home />}/>
         <Route path="/Cars" element={<Cars />}/>
         <Route path="/Representatives" element={<Reps />}/>
         <Route path="/Loan-Estimator" element={<LoanEst />}/>
