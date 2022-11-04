@@ -1,5 +1,5 @@
 #Def Var
-
+#### Basic Version #####
 
 price = 0
 length = 0
@@ -19,6 +19,7 @@ FabPro = 'N'
 PaintPro = 'N'
 VinEtch = "Y"
 RustPro = 'N'
+TradeInTime = ""
 
 # Inputs
 
@@ -29,7 +30,7 @@ TradeInYN = input("Would you like to trade in your car(Y/N)? ")
 
 if TradeInYN == "Y" or TradeInYN == "y":
     TradeIn = input("What price did you buy the car for? ")
-    TradeInTime = input("How long have you had this car? ")
+    TradeInTime = input("How long have you had this car? (In Months) ")
     TradeInCond = input("What is the condition of the car? ")
 
 elif TradeInYN == 'N' or TradeInYN == 'n':
@@ -38,18 +39,16 @@ elif TradeInYN == 'N' or TradeInYN == 'n':
 else:
     print("OK")
 
-credit = input("What is your credit score?:")
+credit = int(input("What is your credit score?:"))
 DTIYN = input("Do you know your debt to income? (Y/N):")
 
 if DTIYN == "Y" or DTIYN == "y":
     DTIn = input("What is your debt to income ratio?:")
 
-elif DTIYN == "N" or DTIYN == "n":
-    DTIn = 0
-    incomeYN = input("Do you know your Income?(Y/N): ")
-else: 
-    print("Please typr Y or N in the awnser box")
 
+elif DTIYN == "N" or DTIYN == "n":
+    DTI = 0
+    incomeYN = input("Do you know your Income?(Y/N): ")
 
 if incomeYN == "Y" or incomeYN == "y":
     income = input("What is your income?: ")
@@ -109,17 +108,33 @@ else:
     print('please input a Y or N')
 
 # Calculator part
-# intrest rate
+#intrest rate
+if credit >= 781:
+    intrest = 3
+elif credit >= 661:
+    intrest = 5
+elif credit >= 601:
+    intrest = 10
+elif credit >= 501:
+    intrest = 15
+elif credit >= 300:
+    intrest >= 20
+else:
+    print('Too Low')
+# credit is going to be a slider with 1 
+# with 1 being the min and 6 the highest score and best rates
 
 
-
-
-
-
-# total loan amount
-Loanamt = int(price) - int(downPay)
-# Monthy cost
-Monthly = Loanamt * int(intrest) / int(length)
+#intrestTotal
+intrestTotal =  (float(length) // 12 * (float(intrest) // 100)) * float(price)
+#Length calculations
+years = float(length) // 12
+print(years)
 # total
-total = (int(Loanamt) * int(intrest)) + (int(Loanamt) * int(Tax)) + int(Loanamt)
+if TradeInYN == "y" or TradeInYN == "Y":
+    # trade in
+    TradeInVal = float(TradeInTime) // 12 * .1 * float(TradeIn)
+    total = float(Fees) + float(intrestTotal) - float(TradeInVal)
+else:
+    total = float(Fees) + float(intrestTotal) + float(price)
 print(total)

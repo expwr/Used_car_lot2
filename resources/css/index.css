@@ -398,7 +398,7 @@ form button:hover{
     margin-top: 11%;
     margin-left: 94%;
     top: 100%;
-    background-color: #ca7f7f;
+    background-color: #89CFF0;
     color: black;
     border-radius: 10px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -406,15 +406,20 @@ form button:hover{
     padding: 5px;
 }
 
+.button-that-opens-the-EstPop:hover {
+  cursor: pointer;
+  background-color: #6ac6f7;
+}
+
 .EstPop {
     position: sticky;
     margin: auto;
     margin-top: 18%;
-    
-    width: 511px;
-    height: 343px;
+
+    width: 800px;
+    height: 450px;
     padding: 30px, 20px;
-    background: #ddb2b2;
+    background: white;
     border-radius: 10px;
     box-sizing: border-box;
     z-index: 9;
@@ -426,7 +431,6 @@ form button:hover{
                 top 1000ms ease-in-out,
                 transform 1000ms ease-in-out;
 }
-
 .EstPop.active{
     opacity: 1;
     top: 50%;
@@ -471,10 +475,11 @@ form button:hover{
 .EstPop .slider {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
-    width: 100%; /* Full-width */
+    width: 50%; /* Full-width */
     height: 25px; /* Specified height */
     background: #d3d3d3; /* Grey background */
-    outline: none; /* Remove outline */
+    outline-width: 1px; /* Remove outline */
+    outline-style:auto;
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
@@ -482,7 +487,7 @@ form button:hover{
   
   /* Mouse-over effects */
   .EstPop .slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
+    opacity: 1; 
   }
   
   /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
@@ -491,25 +496,27 @@ form button:hover{
     appearance: none;
     width: 25px; /* Set a specific slider handle width */
     height: 25px; /* Slider handle height */
-    background: #04AA6D; /* Green background */
+    background-image:'resources\Pictures\SmallCar.png'; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
   
-  .EstPop .slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #04AA6D; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
-  .EstTitle{
+  .EstPop .EstTitle{
   position: relative;
   text-align: center;
   font-size: 80;
   }
-  .DownPay{
-    position: relative;
-    margin-right: 80%;
+  .EstPop .DownPay{
+  position: relative;
+  margin-right: 0%;
+  display: none;
   }
-  .EstTradeY{
-    display: block;
+  .EstPop .EstTradeInYN{
+  position: relative;
+  margin-right: 80%;
   }
+  .EstPop .EstTradeInYNTitle{
+  position: relative;
+  margin-right: 80%;
+  }
+
+  
