@@ -1,10 +1,12 @@
-import React, {useRef} from 'react'
-import { Form, Button, Card} from 'react-bootstrap'
+import React, { useRef } from 'react'
+import { Form, Button, Card } from 'react-bootstrap'
+import { useAuth } from '../Context/AuthContext'
 
 export default function SignUp() {
   const emailRef = useRef()
   const passwordRef = useRef()
   const passwordConfirmRef = useRef()
+  const signup = useAuth
 
 //https://www.youtube.com/watch?v=PKwu15ldZ7k
 
@@ -26,7 +28,7 @@ export default function SignUp() {
             <Form.Label>Password Confirmation</Form.Label>
             <Form.Control type = "password" ref = {passwordConfirmRef} required></Form.Control>
           </Form.Group>
-          <Button className = "mt-2px w-100" type="submit">Sign Up</Button>
+          <Button className = "mt-2 w-100" type="submit">Sign Up</Button>
         </Form>
       </Card.Body>
     </Card>
