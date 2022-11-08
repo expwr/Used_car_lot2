@@ -120,6 +120,26 @@ body{
   background-color: #6ac6f7;
 }
 
+.LogoutButton{
+  position: relative;
+  margin-top: 15px;
+  left: 41%;
+  background-color: #89CFF0;
+  width: 15%;
+  font-size: large;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 9px;
+  border-width: 1px;
+  border-color: #6ac6f7;
+  border-style: groove;
+}
+
+.LogoutButton:hover{
+  cursor: pointer;
+  border-color: #89CFF0;
+  background-color: #6ac6f7;
+}
+
 
 .nav-menu {
   background-color: #89CFF0;
