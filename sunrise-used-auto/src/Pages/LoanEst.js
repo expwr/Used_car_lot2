@@ -4,10 +4,10 @@ function LoanEst() {
   
   return (
     <div className="LoanEst">
-      <h1>Estimator</h1>
-      <form>
-        <div class='loanEstBox'></div>
-      </form>
+      
+      <div class='loanEstBox'>
+        <title class='LoanEstTitle'>Estimator</title>
+      </div>
     </div>
   );
 }
