@@ -14,11 +14,11 @@ import Reps from "./Pages/Reps";
 import LoanEst from "./Pages/LoanEst";
 import Account from "./Pages/Account";
 import Support from "./Pages/Support";
-import Navbar from "./Components/NavBar";
 import "./App.css";
+import NavBarComp from "./Components/NavBar";
 const AppLayout = () => (
   <>
-    <Navbar />
+    <NavBarComp />
     <Outlet />
   </>
 );
