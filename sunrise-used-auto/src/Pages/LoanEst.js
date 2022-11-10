@@ -6,7 +6,13 @@ function LoanEst() {
     <div className="LoanEst">
       
       <div class='loanEstBox'>
-        <title class='LoanEstTitle'>Estimator</title>
+        <div class='TopBar'>
+          <title class='Title'>Estimator</title>
+        </div>
+        <div class='CreditBox'>
+          <input type='text'class='CreditInput'></input>
+          <h1 class='CredText'>Credit Score</h1>
+        </div>
       </div>
     </div>
   );
