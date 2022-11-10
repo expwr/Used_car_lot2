@@ -200,28 +200,71 @@ span {
 }
 
 /* Start of Loan Est */
-
+.LoanEst .loanEstBox{
+  display: block;
+  margin-left: 40%;
+  margin-top: 5%;
+}
 
 /* Title */
-.LoanEst{
-  display: block;
-  height: 90vh;
-  margin-bottom: 95%;
-  margin-left: 40%;
-  color:rgb(255, 164, 255);
-  font-size: 3rem;
-  font-family: Arial, Helvetica, sans-serif ;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+.loanEstBox .Title{
+  display: flex;
+  position:absolute;
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  width: 100%;
+  margin-left: 290px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
 /* Box */
 .loanEstBox{
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
-  margin: 0;
+  width: 1000px;
+  height: 600px;
+  margin-left: -200px;
+  border-radius: 100px;
+  margin-top: -40px;
   padding: 0;
-  margin-right: 50%;
+  background: #ffffff;
+
+
+}
+/* Top bar */
+.loanEstBox .TopBar{
+  display:block;
+  object-position: center top;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  width: 1000px;
+  height: 100px;
+  background: hsl(170, 100%, 82%);
+}
+/* Credit Box */
+.loanEstBox .CreditBox{
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 220px;
+  height:110px;
+  border-radius: 20px;
+  background: #6aacf7;
+}
+/* Credit Input*/
+.loanEstBox .CreditInput{
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 7px;
+  border-radius: 10px;
+}
+/* Credit Title */
+.loanEstBox .CredText{
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  margin-left: 25px;
+  margin-top: 10px;
+  font-family: 'Gill Sans';
 }
 /* End of Loan Est */
