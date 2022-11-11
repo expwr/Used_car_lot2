@@ -228,8 +228,6 @@ span {
   margin-top: -40px;
   padding: 0;
   background: #ffffff;
-
-
 }
 /* Top bar */
 .loanEstBox .TopBar{
@@ -241,25 +239,53 @@ span {
   height: 100px;
   background: hsl(170, 100%, 82%);
 }
-/* Credit Box */
-.loanEstBox .CreditBox{
+/* inputs in general*/
+/* Input Box */
+.loanEstBox 
+.CreditBox, 
+.ExtraBox, 
+.IncomeBox, 
+.TradeInBox, 
+.DownPayBox, 
+.lengthBox, 
+.priceBox{
   position: absolute;
   margin-top: 30px;
-  margin-left: 30px;
+  margin-left: 10px;
   width: 220px;
   height:110px;
   border-radius: 20px;
   background: #6aacf7;
 }
-/* Credit Input*/
-.loanEstBox .CreditInput{
+/* Margining boxes */
+.loanEstBox .CreditBox{margin-left: 250px;}
+.loanEstBox .ExtraBox {margin-left: 490px}
+.loanEstBox .IncomeBox{margin-left: 730px}
+.loanEstBox .TradeInBox{margin-left:10;;}
+.loanEstBox .DownPayBox{margin-left: 250px; margin-top: 200px;}
+.loanEstBox .lengthBox{margin-left: 490px; margin-top: 200px;}
+.loanEstBox .priceBox{margin-left: 10px; margin-top: 200px;}
+/* Input Spaces*/
+.loanEstBox .CreditInput,
+.ExtraInput, 
+.IncomeInput, 
+.TradeInInput, 
+.DownPayInput, 
+.lengthInput, 
+.priceInput{
   position: absolute;
   margin-top: 60px;
   margin-left: 7px;
   border-radius: 10px;
 }
-/* Credit Title */
-.loanEstBox .CredText{
+/*Input Titles */
+.loanEstBox .CredText,
+.ExtraText, 
+.IncomeText, 
+.TradeInText, 
+.DownPayText, 
+.lengthText, 
+.priceText{
   position: absolute;
   text-align: center;
   font-size: 30px;
