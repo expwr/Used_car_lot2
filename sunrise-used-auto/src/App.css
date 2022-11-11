@@ -202,7 +202,7 @@ span {
 /* Start of Loan Est */
 .LoanEst .loanEstBox{
   display: block;
-  margin-left: 40%;
+  margin-left: 30%;
   margin-top: 5%;
 }
 
@@ -210,11 +210,11 @@ span {
 .loanEstBox .Title{
   display: flex;
   position:absolute;
-  color: white;
-  font-size: 80px;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
   font-weight: bold;
   width: 100%;
-  margin-left: 290px;
+  margin-left: 10px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
 }
@@ -222,25 +222,79 @@ span {
 /* Box */
 .loanEstBox{
   width: 1000px;
-  height: 600px;
+  height: 700px;
   margin-left: -200px;
-  border-radius: 100px;
+  border-radius: 10px;
   margin-top: -40px;
   padding: 0;
-  background: #ffffff;
+  background: #f0f0f0;
+  border-color: rgb(0, 0, 0);
+  border-width: 03px;
+  border-style: solid;
 }
 /* Top bar */
 .loanEstBox .TopBar{
   display:block;
-  object-position: center top;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  width: 1000px;
-  height: 100px;
-  background: hsl(170, 100%, 82%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 994px;
+  height: 70px;
+  background: hsl(0, 0%, 79%);
+  
 }
+/* Inputs*/
+.loanEstBox .inputs{
+  display: block;
+  background: #6ac6f7;
+  width: 230px;
+  height: 600px;
+  border-right-style:solid;
+  border-right-color: #000000;
+  border-right-width: 3px;
+}
+.inputs .CarPrice,
+.DownPay,
+.LLength,
+.Credit {
+  width: 200px;
+  height: 100px;
+  display: block;
+  background: #d5f0ff;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border-style:inset;
+  scale: 100%;
+}
+
+.CarPrice .PriceInput,
+.DownPayInput,
+.LLengthInput,
+.CreditInput{
+  width: 150px;
+  margin-top: 5px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+
+}
+.CarPrice .PriceText,
+.PriceText,
+.DownPayText,
+.LLengthText,
+.CreditText{
+  font-family:'Gill Sans';
+  font-size: 25px;
+  height: 30%;
+  margin-left: 10px;
+}
+
+
+/* Old CSS
+/* Intrest rate total*/
+
 /* inputs in general*/
-/* Input Box */
+/* Input Box *//*
 .loanEstBox 
 .CreditBox, 
 .ExtraBox, 
@@ -255,17 +309,20 @@ span {
   width: 220px;
   height:110px;
   border-radius: 20px;
-  background: #6aacf7;
+  background: #ebf1b5;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
 }
-/* Margining boxes */
+/* Margining boxes *//*
 .loanEstBox .CreditBox{margin-left: 250px;}
 .loanEstBox .ExtraBox {margin-left: 490px}
 .loanEstBox .IncomeBox{margin-left: 730px}
 .loanEstBox .TradeInBox{margin-left:10;;}
-.loanEstBox .DownPayBox{margin-left: 250px; margin-top: 200px;}
-.loanEstBox .lengthBox{margin-left: 490px; margin-top: 200px;}
-.loanEstBox .priceBox{margin-left: 10px; margin-top: 200px;}
-/* Input Spaces*/
+.loanEstBox .DownPayBox{margin-left: 10px; margin-top: 420px;}
+.loanEstBox .lengthBox{margin-left: 10px; margin-top: 290px;}
+.loanEstBox .priceBox{margin-left: 10px; margin-top: 160px;}
+/* Input Spaces*//*
 .loanEstBox .CreditInput,
 .ExtraInput, 
 .IncomeInput, 
@@ -278,7 +335,7 @@ span {
   margin-left: 7px;
   border-radius: 10px;
 }
-/*Input Titles */
+/*Input Titles *//*
 .loanEstBox .CredText,
 .ExtraText, 
 .IncomeText, 
@@ -293,4 +350,9 @@ span {
   margin-top: 10px;
   font-family: 'Gill Sans';
 }
+.DownPayText{
+  margin-left: 10px;;
+}
+   Bad design     */
+
 /* End of Loan Est */
