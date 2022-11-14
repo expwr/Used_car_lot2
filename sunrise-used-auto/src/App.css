@@ -214,6 +214,7 @@ span {
   font-size: 50px;
   font-weight: bold;
   width: 100%;
+
   margin-left: 10px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
@@ -245,9 +246,9 @@ span {
 /* Inputs*/
 .loanEstBox .inputs{
   display: block;
-  background: #6ac6f7;
+  background: #7a7a7a;
   width: 230px;
-  height: 600px;
+  height: 615px;
   border-right-style:solid;
   border-right-color: #000000;
   border-right-width: 3px;
@@ -259,11 +260,11 @@ span {
   width: 200px;
   height: 100px;
   display: block;
-  background: #d5f0ff;
+  background: #b3e2f5;
   margin-top: 10px;
   margin-left: 10px;
   border-radius: 10px;
-  border-style:inset;
+  border-style:solid;
   scale: 100%;
 }
 
@@ -288,7 +289,12 @@ span {
   height: 30%;
   margin-left: 10px;
 }
-
+/* Outputs*/
+.loanEstBox .Outputs{
+  display: block;
+  width: 100px;
+  background: #6ac6f7;
+}
 
 /* Old CSS
 /* Intrest rate total*/
