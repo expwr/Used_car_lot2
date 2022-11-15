@@ -1,5 +1,16 @@
+import firebase_admin
+from firebase_admin import db
+from firebase_admin import credentials
 
-credit = input('Heyyy:')
+cred_obj = firebase_admin.credentials.Certificate("C:\\Users\\Factor_Jon\\Documents\\GitHub\\Used_car_lot2\\Python\\usedcarlotloanest-firebase-adminsdk-6u58m-94103d56e0.json")
+default_app = firebase_admin.initialize_app(cred_obj, {
+	'databaseURL':'https://usedcarlotloanest.firebaseio.com'
+	})
+ref = db.reference("/LoanUserData")
+print(ref.get())
+
+
+credit = 600
 credit = int(credit)
 intrest = 0
 length = 12

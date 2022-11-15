@@ -241,17 +241,20 @@ span {
   width: 994px;
   height: 70px;
   background: hsl(0, 0%, 79%);
-  
+
 }
 /* Inputs*/
 .loanEstBox .inputs{
-  display: block;
+  display: absolute;
   background: #c9c9c9;
   width: 230px;
-  height: 615px;
+  height: 624px;
   border-right-style:solid;
   border-right-color: #000000;
   border-right-width: 2px;
+  border-top-color: #000000;
+  border-top-width: 2px;
+  border-top-style:solid;
 }
 .inputs .CarPrice,
 .DownPay,
@@ -259,7 +262,7 @@ span {
 .Credit {
   width: 200px;
   height: 100px;
-  display: block;
+  display: inline-block;
   background: #b3e2f5;
   margin-top: 10px;
   margin-left: 10px;
@@ -289,20 +292,26 @@ span {
   height: 30%;
   margin-left: 10px;
 }
-/* Outputs*/
-.loanEstBox .Outputs{
-  display: block;
-  width: 100px;
-  background: #6ac6f7;
-}
-
 .Enter .enterBtn{
   display: block;
   width: 100px;
   height: 50px;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 65px;
 }
+.enterBtn:hover{
+  background-color: #6ac6f7;
+}
+/* Outputs*/
+.loanEstBox .Outputs{
+  position: absolute;
+  width: 764px;
+  background: #dfdfdf;
+  margin-left: 230px;
+
+}
+
+
 /* Old CSS
 /* Intrest rate total*/
 
