@@ -246,12 +246,12 @@ span {
 /* Inputs*/
 .loanEstBox .inputs{
   display: block;
-  background: #7a7a7a;
+  background: #c9c9c9;
   width: 230px;
   height: 615px;
   border-right-style:solid;
   border-right-color: #000000;
-  border-right-width: 3px;
+  border-right-width: 2px;
 }
 .inputs .CarPrice,
 .DownPay,
@@ -296,6 +296,13 @@ span {
   background: #6ac6f7;
 }
 
+.Enter .enterBtn{
+  display: block;
+  width: 100px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
 /* Old CSS
 /* Intrest rate total*/
 

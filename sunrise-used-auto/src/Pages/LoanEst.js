@@ -3,6 +3,7 @@ import {db} from './firebase_LoanEst-config'
 import {collection, getDocs, addDoc} from 'firebase/firestore';
 
 function LoanEst() {
+
   const [newCredit, setNewCredit] = useState(0)
   const [newDownPay, setNewDownPay] = useState(0)
   const [newLength, setNewLength] = useState(0)
@@ -22,6 +23,24 @@ function LoanEst() {
 
     getUsers()
   }, [])
+  
+  var counter=0;
+
+  function a(){
+  //if(counter>0){
+  //    setTimeout(counter-1, 5000)
+  //}
+  
+  if(counter<2){
+      counter++;
+  }
+  else{
+      document.getElementByClass("enterBtn").disabled=true;
+  }
+  }
+
+
+  
   return (
 
     <div className="LoanEst">
@@ -47,22 +66,9 @@ function LoanEst() {
             <input type='number' class='CreditInput' onChange={(event) => {setNewCredit(event.target.value)}}></input>
           </div>
           <div class='Enter'>
-            <p class='enterText'>Enter:</p>
             <button onClick={createEst} class='enterBtn'>Enter</button>
           </div>
-          <div className='Outputs'>
-            
-            {LoanUserData.map((LoanUserData)=>{
-              return (
-              <div> 
-                {''}
-                <h1>Credit: {LoanUserData.Credit}</h1>
-                <h1>DownPay: {LoanUserData.DownPay}</h1>
-                <h1>Length: {LoanUserData.Length}</h1>
-                <h1>Price: {LoanUserData.Price}</h1>
-              </div>
-              );
-            })}
+          <div className='Outputs'> 
           </div>
         </div>
           
