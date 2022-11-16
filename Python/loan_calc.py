@@ -1,13 +1,27 @@
+import firebase_admin
+from firebase_admin import firestore
+from firebase_admin import credentials
+import time
+cred_obj = credentials.Certificate("C:\\Users\\Factor_Jon\\Documents\\GitHub\\Used_car_lot2\\Python\\usedcarlotloanest-firebase-adminsdk-6u58m-94103d56e0.json")
+default_app = firebase_admin.initialize_app(cred_obj)
 
-credit = input('Heyyy:')
-credit = int(credit)
-intrest = 0
-length = 12
-Price = 10000
-x = True
+
+db=firestore.client()
+db.collection("LoanUserData").order_by("timestamp" 'desc')
+allData = []
+docs = db.collection('LoanUserData').get()
+for doc in docs:
+    allData = doc.to_dict()
+intrest=0
+
+credit=int(allData['credit'])
+downPay=int(allData['downpay'])
+length=int(allData['length'])
+Price=int(allData['price'])
+print(allData)
 def intrests():
 
-    global x, intrest, credit
+    global intrest, credit
     
     if credit >= 781:
         intrest = 3.68
@@ -21,10 +35,11 @@ def intrests():
         intrest = 20.43
     elif credit <= 299:
         print('too low score')
+        intrest = 1
     else:
         print('ERROR')
 
-
+    
     
 intrests()
 def total():
@@ -36,3 +51,5 @@ def total():
 total()
 
 print(intrest, credit, monthly, yearly)
+timestamp = firestore.SERVER_TIMESTAMP
+db.collection('Output').add({'monthly':monthly,'yearly':yearly,'Timestamp': timestamp})
