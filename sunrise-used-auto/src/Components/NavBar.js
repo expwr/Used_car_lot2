@@ -17,42 +17,33 @@ import LoanEst from "../Pages/LoanEst";
 import Account from "../Pages/Account";
 import Support from "../Pages/Support";
 
+const customClass = "NavBar-links"
+
 export default class NavBarComp extends Component {
   render() {
     return (
       <Router>
       <div>
-        <Navbar bg="info" expand="md">
+        <Navbar className='NavBar' variant='light' fixed='top'>
             <Container>
             <Navbar.Brand href="/">
                 <img 
                 src = {logo} 
                 width="150"
                 height="50"
-                className='d-inline-block'
+                className='Logo'
                 alt='Logo'
                 />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-10">
-                <Nav.Link as={Link} to={"/"} color='white'>Home</Nav.Link>
-                <Nav.Link as={Link} to={"/Cars"} color='white'>Cars</Nav.Link>
-                <Nav.Link as={Link} to={"/Reps"} color='white'>Representatives</Nav.Link>
-                <Nav.Link as={Link} to={"/LoanEst"} color='white'>LoanEst</Nav.Link>
-                <Nav.Link as={Link} to={"/Account"} color='white'>Account</Nav.Link>
-                <Nav.Link as={Link} to={"/Support"} color='white'>Support</Nav.Link>
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                    Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                    Separated link
-                </NavDropdown.Item>
-                </NavDropdown>
+            <Navbar.Collapse className='NavBar-col'>
+            <Nav>
+                <Nav.Link as={Link} to={"/"} bsPrefix = {customClass}>Home</Nav.Link>
+                <Nav.Link as={Link} to={"/Cars"} bsPrefix = {customClass}>Cars</Nav.Link>
+                <Nav.Link as={Link} to={"/Reps"} bsPrefix = {customClass}>Representatives</Nav.Link>
+                <Nav.Link as={Link} to={"/LoanEst"} bsPrefix = {customClass}>LoanEst</Nav.Link>
+                <Nav.Link as={Link} to={"/Account"} bsPrefix = {customClass}>Account</Nav.Link>
+                <Nav.Link as={Link} to={"/Support"} bsPrefix = {customClass}>Support</Nav.Link>
             </Nav>
             </Navbar.Collapse>
         </Container>

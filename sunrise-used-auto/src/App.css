@@ -2,8 +2,8 @@
   text-align: center;
 }
 
-body{ 
-  background-image: url("Components/Img.jpg");
+/* body{ 
+  background-image: url("Components/car\ lot\ but\ better.jpg");
   background-size: cover;
   background-position: 50% 0%;
   font-family: sans-serif;
@@ -12,6 +12,10 @@ body{
   width: 100%;
   background-attachment: fixed;
   overflow-x: hidden;
+} */
+
+body{
+  background-color: #fff;
 }
 
 .Home,
@@ -19,7 +23,6 @@ body{
 .Representatives,
 .Account,
 .Support {
-  left: 86.97916667%;
   display: flex;
   height: 90vh;
   align-items: center;
@@ -28,176 +31,49 @@ body{
   color: #fff;
 }
 
-.CurrentUser{
-  position: relative;
-  margin-left: 10px;
-  align-items: left;
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-}
-
-.Account-form{
-  align-self: center;
-  height: 800px;
-  width: 50%;
-  margin-left: 5%;
-  min-width: 400px;
-  background-color: #fff;
-  border-radius: 9px;
-  color: black;
-}
-
-.Account-register{
-  position: relative;
-  left: 5%;
-  padding: 7px;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  font-size: 15px;
-}
-
-.Account-register input{
-  margin-bottom: 10px;
-  border-radius: 4px;
-  border-width: 1px;
-}
-
-.Account-login{
-  position: relative;
-  left: 5%;
-  padding: 7px;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  font-size: 15px;
-}
-
-.Account-login input{
-  margin-bottom: 10px;
-  border-radius: 4px;
-  border-width: 1px;
-}
-
-.RegisterButton{
-  position: relative;
-  margin-top: 15px;
-  left: 36.5%;
+.NavBar{
   background-color: #89CFF0;
-  width: 25%;
-  font-size: large;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border-radius: 9px;
-  border-width: 1px;
-  border-color: #6ac6f7;
-  border-style: groove;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 15%;
 }
 
-.RegisterButton:hover{
-  cursor: pointer;
-  border-color: #89CFF0;
-  background-color: #6ac6f7;
+.NavBar-col{
+  margin-left: -33%;
+  margin-top: 70px;
 }
 
-.LoginButton{
-  position: relative;
-  margin-top: 15px;
-  left: 41%;
-  background-color: #89CFF0;
-  width: 15%;
-  font-size: large;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border-radius: 9px;
-  border-width: 1px;
-  border-color: #6ac6f7;
-  border-style: groove;
+.NavBar-links{
+  margin-right: 10%;
+  color: white;
+  margin-left: 10%;
+  font-size: larger;
+  font-family:sans-serif;
+  font-weight: 900;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.LoginButton:hover{
-  cursor: pointer;
-  border-color: #89CFF0;
-  background-color: #6ac6f7;
-}
-
-.LogoutButton{
-  position: relative;
-  margin-top: 15px;
-  left: 41%;
-  background-color: #89CFF0;
-  width: 15%;
-  font-size: large;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border-radius: 9px;
-  border-width: 1px;
-  border-color: #6ac6f7;
-  border-style: groove;
-}
-
-.LogoutButton:hover{
-  cursor: pointer;
-  border-color: #89CFF0;
-  background-color: #6ac6f7;
-}
-
-
-.nav-menu {
-  background-color: #89CFF0;
-  width: 250px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  border-top-right-radius: 5px;
+.NavBar-links:hover{
+  color: lightcyan;
 }
 
 .Logo{
-  position: relative;
-  right: 170%;
-  width: 170px;
-  height: 60px;
+  position: fixed;
+  height: 82px;
+  width: 246px;
+  left: 3.5%;
+  top: .2%;
 }
 
-
-.nav-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-  height: 60px;
-}
-
-.nav-text a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  width: 90%;
-  padding-left: 15px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-right: 15%;
-  border-radius: 2px;
-  transition: 70ms;
-}
-
-.nav-text a:hover {
-  margin-right: 13%;
-  background-color: #6ac6f7;
-  color: #fff;
-  transition: 70ms;
-}
-
-.nav-menu-items {
+.Home .slide_1{
   width: 100%;
+  height: 50%;
 }
 
-span {
-  margin-left: 16px;
+.Home .slide_2{
+  width: 30%;
 }
+
 
 /* Start of Loan Est */
 .LoanEst .loanEstBox{
