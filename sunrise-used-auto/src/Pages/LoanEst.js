@@ -12,7 +12,7 @@ function LoanEst() {
   const LoanCollectionRef = collection(db, 'LoanUserData')
 
   const createEst = async () => {
-    await addDoc(LoanCollectionRef, {credit: newCredit, downpay: newDownPay, length: newLength, price: newPrice});
+    await addDoc(LoanCollectionRef, {credit: newCredit, downpay: newDownPay, length: newLength, price: newPrice, timestamp: new Date(),});
   }
   useEffect(()=> {
 
@@ -37,6 +37,7 @@ function LoanEst() {
         </div>
         <div className='Outputs'> 
           <h1 className='Results'>Results:</h1>
+          
         </div>
         <div className="inputs">
           <div className='CarPrice'>
