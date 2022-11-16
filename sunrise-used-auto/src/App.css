@@ -300,7 +300,10 @@ span {
   margin-left: 65px;
 }
 .enterBtn:hover{
-  background-color: #6ac6f7;
+  background-color: #bbe7ff;
+  border-width: 1px;
+ font-size: 20px;
+  
 }
 /* Outputs*/
 .loanEstBox .Outputs{
