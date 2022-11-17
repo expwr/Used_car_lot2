@@ -2,7 +2,7 @@ import React from 'react'
 
 function Account() {
   return (
-    <div className="Representatives">
+    <div className="Account">
       <h1>Account</h1>
     </div>
   )

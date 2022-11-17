@@ -39,11 +39,11 @@ export default class NavBarComp extends Component {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse className='NavBar-col'>
-            <Nav>
+            <Nav className='Nav1'>
                 <Nav.Link as={Link} to={"/"} bsPrefix = {customClass1}>Home</Nav.Link>
                 <Nav.Link as={Link} to={"/Cars"} bsPrefix = {customClass1}>Cars</Nav.Link>
                 <Nav.Link as={Link} to={"/Reps"} bsPrefix = {customClass1}>Representatives</Nav.Link>
-                <Nav.Link as={Link} to={"/LoanEst"} bsPrefix = {customClass1}>Loan</Nav.Link>
+                <Nav.Link as={Link} to={"/LoanEst"} bsPrefix = {customClass1}>Loan Estimator</Nav.Link>
                 <Nav.Link as={Link} to={"/Account"} bsPrefix = {customClass1}>Account</Nav.Link>
                 <Nav.Link as={Link} to={"/Support"} bsPrefix = {customClass1}>Support</Nav.Link>
             </Nav>

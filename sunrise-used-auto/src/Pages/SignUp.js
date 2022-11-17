@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 function SignUp() {
   return (
-    <div className="Cars">
+    <div className="SignUp">
       <h1>Sign Up</h1>
     </div>
   );
