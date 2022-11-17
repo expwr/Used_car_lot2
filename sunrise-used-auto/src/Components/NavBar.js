@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from './Sunrise Long.png'
 import {
   BrowserRouter as Router,
@@ -17,7 +17,9 @@ import LoanEst from "../Pages/LoanEst";
 import Account from "../Pages/Account";
 import Support from "../Pages/Support";
 
-const customClass = "NavBar-links"
+const customClass1 = "NavBar-links1"
+const customClass2 = "NavBar-links2"
+const customClass3 = "Sign-Up"
 
 export default class NavBarComp extends Component {
   render() {
@@ -38,12 +40,18 @@ export default class NavBarComp extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse className='NavBar-col'>
             <Nav>
-                <Nav.Link as={Link} to={"/"} bsPrefix = {customClass}>Home</Nav.Link>
-                <Nav.Link as={Link} to={"/Cars"} bsPrefix = {customClass}>Cars</Nav.Link>
-                <Nav.Link as={Link} to={"/Reps"} bsPrefix = {customClass}>Representatives</Nav.Link>
-                <Nav.Link as={Link} to={"/LoanEst"} bsPrefix = {customClass}>LoanEst</Nav.Link>
-                <Nav.Link as={Link} to={"/Account"} bsPrefix = {customClass}>Account</Nav.Link>
-                <Nav.Link as={Link} to={"/Support"} bsPrefix = {customClass}>Support</Nav.Link>
+                <Nav.Link as={Link} to={"/"} bsPrefix = {customClass1}>Home</Nav.Link>
+                <Nav.Link as={Link} to={"/Cars"} bsPrefix = {customClass1}>Cars</Nav.Link>
+                <Nav.Link as={Link} to={"/Reps"} bsPrefix = {customClass1}>Representatives</Nav.Link>
+                <Nav.Link as={Link} to={"/LoanEst"} bsPrefix = {customClass1}>Loan</Nav.Link>
+                <Nav.Link as={Link} to={"/Account"} bsPrefix = {customClass1}>Account</Nav.Link>
+                <Nav.Link as={Link} to={"/Support"} bsPrefix = {customClass1}>Support</Nav.Link>
+            </Nav>
+            <Nav className='Nav2'>
+                <Nav.Link as={Link} to={"/About"} bsPrefix = {customClass2}>About</Nav.Link>
+                <Nav.Link as={Link} to={"/Contact"} bsPrefix = {customClass2}>Contact</Nav.Link>
+                <Nav.Link as={Link} to={"/Login"} bsPrefix = {customClass2}>Login</Nav.Link>
+                <Nav.Link as={Link} to={"/SignUp"} bsPrefix = {customClass3}>Sign Up</Nav.Link>
             </Nav>
             </Navbar.Collapse>
         </Container>
