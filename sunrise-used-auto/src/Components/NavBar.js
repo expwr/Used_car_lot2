@@ -16,6 +16,10 @@ import Reps from "../Pages/Reps";
 import LoanEst from "../Pages/LoanEst";
 import Account from "../Pages/Account";
 import Support from "../Pages/Support";
+import About from "../Pages/AboutUs"
+import Contact from "../Pages/Contact"
+import Login from "../Pages/Login"
+import SignUp from '../Pages/SignUp';
 
 const customClass1 = "NavBar-links1"
 const customClass2 = "NavBar-links2"
@@ -37,8 +41,6 @@ export default class NavBarComp extends Component {
                 alt='Logo'
                 />
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse className='NavBar-col'>
             <Nav className='Nav1'>
                 <Nav.Link as={Link} to={"/"} bsPrefix = {customClass1}>Home</Nav.Link>
                 <Nav.Link as={Link} to={"/Cars"} bsPrefix = {customClass1}>Cars</Nav.Link>
@@ -53,7 +55,6 @@ export default class NavBarComp extends Component {
                 <Nav.Link as={Link} to={"/Login"} bsPrefix = {customClass2}>Login</Nav.Link>
                 <Nav.Link as={Link} to={"/SignUp"} bsPrefix = {customClass3}>Sign Up</Nav.Link>
             </Nav>
-            </Navbar.Collapse>
         </Container>
     </Navbar>
       </div>
@@ -64,6 +65,10 @@ export default class NavBarComp extends Component {
           <Route path='/LoanEst' element={<LoanEst/>}/>
           <Route path='/Account' element={<Account/>}/>
           <Route path='/Support' element={<Support/>}/>
+          <Route path='/About' element={<About/>}/>
+          <Route path='/Contact' element={<Contact/>}/>
+          <Route path='/Login' element={<Login/>}/>
+          <Route path='/SignUp' element={<SignUp/>}/>
         </Routes>
       </Router>
     )
