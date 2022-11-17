@@ -14,6 +14,9 @@ for doc in docs:
     allData = doc.to_dict()
 intrest=0
 
+
+
+
 credit=int(allData['credit'])
 downPay=int(allData['downpay'])
 length=int(allData['length'])

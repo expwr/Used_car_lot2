@@ -2,28 +2,32 @@ import React, { useState, useEffect } from "react";
 import {db} from './firebase_LoanEst-config'
 import {collection, getDocs, addDoc} from 'firebase/firestore';
 
+
+
 function LoanEst() {
-
-  const [newCredit, setNewCredit] = useState(0)
-  const [newDownPay, setNewDownPay] = useState(0)
-  const [newLength, setNewLength] = useState(0)
-  const [newPrice, setNewPrice] = useState(0)
-  const [LoanUserData, setLoanUserData] =useState([]);
-  const LoanCollectionRef = collection(db, 'LoanUserData')
-
-  const createEst = async () => {
-    await addDoc(LoanCollectionRef, {credit: newCredit, downpay: newDownPay, length: newLength, price: newPrice, timestamp: new Date(),});
-  }
-  useEffect(()=> {
-
-    const getUsers = async () => {
-      const data=await getDocs(LoanCollectionRef);
-      setLoanUserData(data.docs.map((doc) => ({...doc.data(), id: doc.id })))
+  const [credit, setCredit] = useState('');
+  const cred = event => {setCredit(event.target.value);};
+  const send = async () => {
+    const content = "http://127.0.0.1:5000"
+    const todo = { content };
+    const response = await fetch("/add_todo", {
+    method: "GET",
+    headers: {
+    'Content-Type' : 'application/json'
+    },
+    body: JSON.stringify(todo)
+    })
+    if (response.ok){
+     console.log("it worked")
+    onNewTodo(todo)
+    setContent('')
     }
+  }
+    
 
-    getUsers()
-  }, [])
-
+  const [data, setdata] = useState({
+    credit: credit,
+  });
 
 
 
@@ -40,26 +44,27 @@ function LoanEst() {
           
         </div>
         <div className="inputs">
-          <div className='CarPrice'>
-            <p className='PriceText'>Car Price:</p>
-            <input type='number' className='PriceInput'onChange={(event) => {setNewPrice(event.target.value)}}></input>
-          </div>
-          <div className='DownPay'>
-            <p className='DownPayText'>Down Payment:</p>
-            <input type='number' className='DownPayInput'onChange={(event) => {setNewDownPay(event.target.value)}}></input>
-          </div>
-          <div className='LLength'>
-            <p className='LLengthText'>Lenght:</p>
-            <input type='number' className='LLengthInput'onChange={(event) => {setNewLength(event.target.value)}}></input>
-          </div>
-          <div className='Credit'>
-            <p className='CreditText'>Credit Score:</p>
-            <input type='number' className='CreditInput' onChange={(event) => {setNewCredit(event.target.value)}}></input>
-          </div>
-          <div className='Enter'>
-            <button onClick={createEst} className='enterBtn'>Enter</button>
-          </div>
-
+          <form action = "http://localhost:5000/result" method = "POST">
+            <div className='CarPrice'>
+              <p className='PriceText'>Car Price:</p>
+              <input type='number' className='PriceInput'onChange={cred}></input>
+            </div>
+            <div className='DownPay'>
+              <p className='DownPayText'>Down Payment:</p>
+              <input type='number' className='DownPayInput'onChange={cred} ></input>
+            </div>
+            <div className='LLength'>
+              <p className='LLengthText'>Lenght:</p>
+              <input type='number' className='LLengthInput'onChange={cred} ></input>
+            </div>
+            <div className='Credit'>
+              <p className='CreditText'>Credit Score:</p>
+              <input type='number' className='CreditInput' id='credit' value ={credit} onChange={cred} ></input>
+            </div>
+            <div className='Enter'>
+              <button onClick={send} className='enterBtn'>Enter</button>
+            </div>
+          </form>
         </div>
 
 
