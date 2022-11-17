@@ -18,13 +18,15 @@ body{
   background-color: #fff;
 }
 
+/* !!!! Start of Pages !!!! */
 .Home,
 .Cars,
 .Representatives,
 .Account,
 .Support,
 .About,
-.Login {
+.Login,
+.SignUp {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -32,7 +34,9 @@ body{
   font-size: 3rem;
   color: blue;
 }
+/* !!!! End of Pages !!!! */
 
+/* !!!! Start of NavBar !!!! */
 .NavBar{
   background-color: #89CFF0;
   border-bottom-left-radius: 10px;
@@ -46,10 +50,13 @@ body{
 }
 
 .NavBar-links1{
+  white-space: nowrap;
+  border-radius: 5px;
+  padding: 5px;
   display: inline-block;
-  margin-right: 10%;
+  margin-right: 8%;
   color: white;
-  margin-left: 10%;
+  margin-left: 8%;
   font-size: larger;
   font-family:sans-serif;
   font-weight: 900;
@@ -57,46 +64,61 @@ body{
 }
 
 .NavBar-links2{
+  position: relative;
+  border-radius: 5px;
+  padding: 5px;
   margin-top: 5px;
   display: inline-block;
   color: white;
-  margin-left: 10%;
+  margin-left: 9%;
   font-size: larger;
   font-family:sans-serif;
   font-weight: 900;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.Nav1{
+  height: 5%;
+  background-color: #55B7E5;
+}
+
 .Nav2{
-  margin-left: 70%;
+  margin-left: 55%;
   padding-bottom: 90px;
 }
 
 .Sign-Up{
   display: inline-block;
-  white-space: nowrap;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-right: 10%;
   margin-left: 10%;
   padding: 5px;
+  border-radius: 5px;
   background-color: #b3e2f5;
-  margin-right: 10%;
   color: white;
-  margin-right: 10%;
   font-size: larger;
   font-family:sans-serif;
   font-weight: 900;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
 }
 
 .NavBar-links1:hover{
-  color: lightcyan;
+  text-decoration: none;
+  color: white;
+  background-color: #2CB3F2;
 }
 
 .NavBar-links2:hover{
-  color: lightcyan;
+  text-decoration: none;
+  color: white;
+  background-color: #2CB3F2;
 }
 
 .Sign-Up:hover{
-  color: lightcyan;
+  text-decoration: none;
+  color: #55B7E5;
 }
 
 .Logo{
@@ -106,16 +128,7 @@ body{
   left: 3.5%;
   top: .2%;
 }
-
-.Home .slide_1{
-  width: 100%;
-  height: 50%;
-}
-
-.Home .slide_2{
-  width: 30%;
-}
-
+/* !!!! End of NavBar !!!! */
 
 /* Start of Loan Est */
 .LoanEst .loanEstBox{
@@ -140,6 +153,7 @@ body{
 
 /* Box */
 .loanEstBox{
+  position: relative;
   width: 1000px;
   height: 700px;
   margin-left: -200px;
