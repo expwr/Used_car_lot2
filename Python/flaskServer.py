@@ -7,11 +7,10 @@ app.debug = True
 
 @app.route('/result')
 def index():
-    print("got message")
     #price = request.args.get("PRICE")
     var = 100
     # get the loan
-    return {"members": ["member1", "member2"]}
+    return {"credits": ["idk", "what im doing"]}
 
 
 if __name__ == '__main__':
