@@ -1,10 +1,10 @@
 import React from "react";
+import ImageSlider from "../Components/Imageslider"
+import { SliderData } from "../Components/SliderData"
 
 function Home() {
   return (
-    <div className="Home">
-      <h1>Home</h1>
-    </div>
+    <ImageSlider slides={SliderData} />
   );
 }
 
