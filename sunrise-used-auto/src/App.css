@@ -244,10 +244,21 @@ body{
 /* Outputs*/
 .loanEstBox .Outputs{
   position: absolute;
+  border-style:solid;
+  width: 769px;
+  height: 625px;
+  margin-left: 228px;
+}
+.Outputs .Results{
+  position: absolute;
   width: 764px;
   background: #dfdfdf;
-  margin-left: 230px;
 
+}
+.Outputs .inputresults{
+  position: inline-flex;
+  width: 764px;
+  margin-top: 40px;
 }
 
 /*Slider*/
