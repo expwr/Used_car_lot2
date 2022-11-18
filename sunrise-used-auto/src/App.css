@@ -274,11 +274,12 @@ body{
   width: 1000px;
   height: 600px;
   border-radius: 10px;
+  margin-bottom: 100px;
 }
 
 .right-arrow {
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 32px;
   font-size: 3rem;
   color: #000;
@@ -289,7 +290,7 @@ body{
 
 .left-arrow {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 32px;
   font-size: 3rem;
   color: #000;
