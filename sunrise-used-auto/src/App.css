@@ -42,7 +42,7 @@ body{
   background-color: #89CFF0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  height: 15%;
+  height: 10%;
 }
 
 .NavBar-col{
@@ -51,7 +51,7 @@ body{
 }
 
 .NavBar-links1{
-  position: static;
+  position: relative;
   display: inline-block;
   border-radius: 5px;
   padding: 5px;
@@ -63,7 +63,8 @@ body{
   margin-right: 3%;
   margin-left: 3%;
   right: 60.5%;
-  margin-top: 60px;
+  margin-top: 7px;
+  left: -15%;
 }
 
 .NavBar-links2{
@@ -71,16 +72,17 @@ body{
   display: inline-block;
   border-radius: 5px;
   padding: 5px;
-  top: 25px;
-  right: 60%;
   color: white;
   font-size: larger;
-  font-family:sans-serif;
+  white-space: nowrap;
   font-weight: 900;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-left: 8%;
+  margin-right: 3%;
+  margin-left: 3%;
+  right: 60.5%;
+  margin-top: 90px;
+  left: -50%;
 }
-
 
 .Nav2{
   margin-left: 55%;
@@ -92,16 +94,17 @@ body{
   display: inline-block;
   border-radius: 5px;
   padding: 5px;
-  top: 25px;
-  right: 60%;
   color: white;
-  background-color: #b3e2f5;
   font-size: larger;
-  font-family:sans-serif;
+  white-space: nowrap;
   font-weight: 900;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  white-space: nowrap;
-  margin-left: 8%;
+  margin-right: 3%;
+  margin-left: 3%;
+  right: 60.5%;
+  margin-top: 90px;
+  background-color: #b3e2f5;
+  left: -50%;
 }
 
 .NavBar-links1:hover{
@@ -125,8 +128,8 @@ body{
   position: fixed;
   height: 82px;
   width: 246px;
-  left: 3.5%;
-  top: .2%;
+  left: 1%;
+  top: .5%;
 }
 /* !!!! End of NavBar !!!! */
 
