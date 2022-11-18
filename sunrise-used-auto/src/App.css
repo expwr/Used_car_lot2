@@ -134,7 +134,7 @@ body{
 .LoanEst .loanEstBox{
   display: block;
   margin-left: 30%;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 /* Title */
@@ -195,7 +195,6 @@ body{
   width: 200px;
   height: 100px;
   display: inline-block;
-  background: #b3e2f5;
   margin-top: 10px;
   margin-left: 10px;
   border-radius: 10px;
