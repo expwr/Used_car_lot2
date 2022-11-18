@@ -51,7 +51,7 @@ body{
 }
 
 .NavBar-links1{
-  position: relative;
+  position: static;
   display: inline-block;
   border-radius: 5px;
   padding: 5px;
@@ -60,10 +60,10 @@ body{
   white-space: nowrap;
   font-weight: 900;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-right: 8%;
-  margin-left: 8%;
-  right: 64.5%;
-  top: 30px;
+  margin-right: 3%;
+  margin-left: 3%;
+  right: 60.5%;
+  margin-top: 60px;
 }
 
 .NavBar-links2{
