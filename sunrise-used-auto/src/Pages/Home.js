@@ -4,7 +4,9 @@ import { SliderData } from "../Components/SliderData"
 
 function Home() {
   return (
-    <ImageSlider slides={SliderData} />
+    <div className="Slider_div">
+      <ImageSlider slides={SliderData} />
+    </div>
   );
 }
 

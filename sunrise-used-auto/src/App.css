@@ -66,7 +66,7 @@ body{
   margin-left: 3%;
   right: 60.5%;
   margin-top: 7px;
-  left: -15%;
+  left: -55%;
 }
 
 .NavBar-links2{
@@ -82,8 +82,8 @@ body{
   margin-right: 3%;
   margin-left: 3%;
   right: 60.5%;
-  margin-top: 90px;
-  left: -50%;
+  margin-top: 97px;
+  left: -140%;
 }
 
 .Nav2{
@@ -104,9 +104,9 @@ body{
   margin-right: 3%;
   margin-left: 3%;
   right: 60.5%;
-  margin-top: 90px;
+  margin-top: 97px;
   background-color: #b3e2f5;
-  left: -50%;
+  left: -140%;
 }
 
 .NavBar-links1:hover{
@@ -127,10 +127,10 @@ body{
 }
 
 .Logo{
-  position: fixed;
+  position: relative;
   height: 82px;
   width: 246px;
-  left: 1%;
+  left: -140%;
   top: .5%;
 }
 /* !!!! End of NavBar !!!! */
@@ -326,3 +326,6 @@ body{
   transform: scale(1.08);
 }
 
+.Slider_div{
+  width: 100%;
+}
