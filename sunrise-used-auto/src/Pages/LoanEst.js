@@ -6,28 +6,39 @@ var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 
 function LoanEst() {
+
+
+
+
   const [credit, setCredit] = useState('');
-  const intrest =33
-  const Princeple =33
-  const tax = 33
+  const [price, setLength] = useState('');
+  const [length, setPrice] = useState('');
+
 
 
   const cred = event => {setCredit(event.target.value); };
+  const prices = event => {setPrice(event.target.value); };
+  const lengths = event => {setLength(event.target.value); };
+
+
   const send = async () => {
-    const everything = {credit}
+    const everything = {credit, price, length}
     const responce = await fetch('/result', {
         method: 'POST',
         headers: {
-            "name": 'credit',
+            "credit": credit,
+            'price': price,
+            'length': length,
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({everything})
+        body: JSON.stringify(everything)
     })
 
   }
 
   const [data, setData] = useState([{}]);
-
+  const [monthly, setMon] = useState([{}]);
+  const [monTax, setMontax] = useState([{}]);
 
   useEffect(() => {
     
@@ -35,11 +46,20 @@ function LoanEst() {
          res => res.json().then(
             data => {
                 setData(data)
-                console.log(data)
+            },
+            monthly =>{
+              setMon(monthly)
+            },
+            monTax =>{
+              setMontax(monTax)
             }
          )
     )
   }, []);
+
+
+
+  
   const options = {
     animationEnabled: true,
     exportEnabled: true,
@@ -52,9 +72,9 @@ function LoanEst() {
       indexLabel: "{label}: {y}%",		
       startAngle: -90,
       dataPoints: [
-        { y: intrest, label: "Intrest" },
-        { y: tax, label: "Tax" },
-        { y: Princeple, label: "Princeple" }
+        { y: 1, label: "Intrest" },
+        { y: monTax, label: "Tax" },
+        { y: monthly, label: "Princeple" }
       ]
     }]
   };
@@ -93,7 +113,7 @@ function LoanEst() {
           <form >
             <div className='CarPrice'>
               <p className='PriceText'>Car Price:</p>
-              <input type='number' className='PriceInput'onChange={cred}></input>
+              <input type='number' className='PriceInput'onChange={prices}></input>
             </div>
             <div className='DownPay'>
               <p className='DownPayText'>Down Payment:</p>
@@ -101,7 +121,7 @@ function LoanEst() {
             </div>
             <div className='LLength'>
               <p className='LLengthText'>Lenght:</p>
-              <input type='number' className='LLengthInput'onChange={cred} ></input>
+              <input type='number' className='LLengthInput'onChange={lengths} ></input>
             </div>
             <div className='Credit'>
               <p className='CreditText'>Credit Score:</p>

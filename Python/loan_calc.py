@@ -1,48 +1,33 @@
 
-import time
+# import time
+# from flask  import Flask, request
 
 
 
+# credit= request.form.get(credit)
+# credit = 500
+# downPay=1111
+# length=1111
+# Price=1111
 
+# def intrests():
 
-
-
-credit=0
-downPay=0
-length=0
-Price=0
-
-def intrests():
-
-    global intrest, credit
+#     global intrest, credit
     
-    if credit >= 781:
-        intrest = 3.68
-    elif credit >= 660:
-        intrest = 5.53
-    elif credit >= 600:
-        intrest = 10.33
-    elif credit >= 500:
-        intrest += 16.85
-    elif credit >= 300:
-        intrest = 20.43
-    elif credit <= 299:
-        print('too low score')
-        intrest = 1
-    else:
-        print('ERROR')
+#     intrest = 17 - ((credit/50)*.5)+4
 
     
     
-intrests()
-def total():
-    global length, intrest, Price, monthly, yearly
+# intrests()
+# def total():
+#     global length, intrest, Price, monthly, yearly, monTot, monTax, yearTax, yearlytot
 
-    intrest = intrest * 0.01
-    monthly = (intrest/12) * (1/(1-(1+intrest/12)**(-length)))*Price
-    yearly = monthly * 12
-total()
+#     monthly = ((intrest/12) * (1/(1-(1+intrest/12)**(-length)))*Price)
+#     monTax = monthly * .0575
+#     monTot = monTax + monthly
+#     yearly = monthly * 12
+#     yearTax = yearly * .0575
+#     yearlytot = yearly + yearTax
+# total()
 
-print(intrest, credit, monthly, yearly)
-timestamp = firestore.SERVER_TIMESTAMP
-db.collection('Output').add({'monthly':monthly,'yearly':yearly,'Timestamp': timestamp})
+# print(intrest, credit, monthly, yearly, yearlytot, yearTax)
