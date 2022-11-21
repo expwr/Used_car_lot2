@@ -1,25 +1,29 @@
 import React, { useState, useEffect } from "react";
-import {db} from './firebase_LoanEst-config'
-import {collection, getDocs, addDoc} from 'firebase/firestore';
+import CanvasJSReact from './graph/canvasjs.react';
+var CanvasJS = CanvasJSReact.CanvasJS;
+var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 
 
 function LoanEst() {
   const [credit, setCredit] = useState('');
+  const intrest =33
+  const Princeple =33
+  const tax = 33
+
+
   const cred = event => {setCredit(event.target.value); };
   const send = async () => {
     const everything = {credit}
-    const responce = await fetch('http://127.0.0.1:5000/result', {
+    const responce = await fetch('/result', {
         method: 'POST',
         headers: {
+            "name": 'credit',
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({credit})
+        body: JSON.stringify({everything})
     })
 
-    if (responce.ok) {
-        console.log('responce worked')
-    }
   }
 
   const [data, setData] = useState([{}]);
@@ -36,8 +40,26 @@ function LoanEst() {
          )
     )
   }, []);
+  const options = {
+    animationEnabled: true,
+    exportEnabled: true,
+    theme: "light1", // "light1", "dark1", "dark2"
+    title:{
+      text: "Cost"
+    },
+    data: [{
+      type: "pie",
+      indexLabel: "{label}: {y}%",		
+      startAngle: -90,
+      dataPoints: [
+        { y: intrest, label: "Intrest" },
+        { y: tax, label: "Tax" },
+        { y: Princeple, label: "Princeple" }
+      ]
+    }]
+  };
 
-  
+
   return (
 
     <div className="LoanEst">
@@ -56,6 +78,16 @@ function LoanEst() {
                     ))
                 )}
             </div>
+            <div className="PieLine">
+              <button className="Pie">Pie</button>
+              <button className="Line">Line</button>
+            </div>
+            <div className="Pies" id="Pies">
+			<CanvasJSChart options = {options} 
+				/* onRef={ref => this.chart = ref} */
+			/>
+			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
+		        </div>
         </div>
         <div className="inputs">
           <form >

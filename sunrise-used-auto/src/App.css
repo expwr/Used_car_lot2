@@ -260,7 +260,23 @@ body{
   width: 764px;
   margin-top: 40px;
 }
+.Outputs .PieLine{
+  position: relative;
+}
+.PieLine .Pie{
 
+  width: 100px;
+  height: 30px;
+}
+.PieLine .Line{
+
+  width: 100px;
+  height: 30px;
+}
+.Pies{
+  display:block ;
+  margin-left: 15%;
+}
 /*Slider*/
 .slider {
   position: relative;

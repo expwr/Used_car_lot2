@@ -1,27 +1,17 @@
-import firebase_admin
-from firebase_admin import firestore
-from firebase_admin import credentials
+
 import time
-cred_obj = credentials.Certificate("C:\\Users\\Factor_Jon\\Documents\\GitHub\\Used_car_lot2\\Python\\usedcarlotloanest-firebase-adminsdk-6u58m-94103d56e0.json")
-default_app = firebase_admin.initialize_app(cred_obj)
-
-
-db=firestore.client()
-db.collection("LoanUserData").order_by("timestamp" 'desc')
-allData = []
-docs = db.collection('LoanUserData').get()
-for doc in docs:
-    allData = doc.to_dict()
-intrest=0
 
 
 
 
-credit=int(allData['credit'])
-downPay=int(allData['downpay'])
-length=int(allData['length'])
-Price=int(allData['price'])
-print(allData)
+
+
+
+credit=0
+downPay=0
+length=0
+Price=0
+
 def intrests():
 
     global intrest, credit
